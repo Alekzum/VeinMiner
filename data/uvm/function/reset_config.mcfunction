@@ -194,6 +194,14 @@ scoreboard objectives add uvm.t.minecraft.diamond_axe minecraft.used:minecraft.d
 scoreboard objectives add uvm.t.minecraft.netherite_axe minecraft.used:minecraft.netherite_axe
 scoreboard objectives add uvm.t.minecraft.copper_axe minecraft.used:minecraft.copper_axe
 
+scoreboard objectives add uvm.t.minecraft.wooden_shovel minecraft.used:minecraft.wooden_shovel
+scoreboard objectives add uvm.t.minecraft.stone_shovel minecraft.used:minecraft.stone_shovel
+scoreboard objectives add uvm.t.minecraft.iron_shovel minecraft.used:minecraft.iron_shovel
+scoreboard objectives add uvm.t.minecraft.golden_shovel minecraft.used:minecraft.golden_shovel
+scoreboard objectives add uvm.t.minecraft.diamond_shovel minecraft.used:minecraft.diamond_shovel
+scoreboard objectives add uvm.t.minecraft.netherite_shovel minecraft.used:minecraft.netherite_shovel
+scoreboard objectives add uvm.t.minecraft.copper_shovel minecraft.used:minecraft.copper_shovel
+
 execute unless data storage uvm:data custom_blocks run data modify storage uvm:data custom_blocks set value {pickaxe: [], axe: [], shovel: [], hoe: []}
 
 scoreboard players set sneak_mode uvm.config 1
