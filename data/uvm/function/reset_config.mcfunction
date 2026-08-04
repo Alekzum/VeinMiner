@@ -90,6 +90,7 @@ function uvm:add_tool {namespace: "minecraft", id: "iron_pickaxe", category: "pi
 function uvm:add_tool {namespace: "minecraft", id: "golden_pickaxe", category: "pickaxe"}
 function uvm:add_tool {namespace: "minecraft", id: "diamond_pickaxe", category: "pickaxe"}
 function uvm:add_tool {namespace: "minecraft", id: "netherite_pickaxe", category: "pickaxe"}
+function uvm:add_tool {namespace: "minecraft", id: "copper_pickaxe", category: "pickaxe"}
 
 function uvm:add_tool {namespace: "minecraft", id: "wooden_axe", category: "axe"}
 function uvm:add_tool {namespace: "minecraft", id: "stone_axe", category: "axe"}
@@ -97,6 +98,7 @@ function uvm:add_tool {namespace: "minecraft", id: "iron_axe", category: "axe"}
 function uvm:add_tool {namespace: "minecraft", id: "golden_axe", category: "axe"}
 function uvm:add_tool {namespace: "minecraft", id: "diamond_axe", category: "axe"}
 function uvm:add_tool {namespace: "minecraft", id: "netherite_axe", category: "axe"}
+function uvm:add_tool {namespace: "minecraft", id: "copper_axe", category: "axe"}
 
 function uvm:add_tool {namespace: "minecraft", id: "wooden_shovel", category: "shovel"}
 function uvm:add_tool {namespace: "minecraft", id: "stone_shovel", category: "shovel"}
@@ -104,6 +106,7 @@ function uvm:add_tool {namespace: "minecraft", id: "iron_shovel", category: "sho
 function uvm:add_tool {namespace: "minecraft", id: "golden_shovel", category: "shovel"}
 function uvm:add_tool {namespace: "minecraft", id: "diamond_shovel", category: "shovel"}
 function uvm:add_tool {namespace: "minecraft", id: "netherite_shovel", category: "shovel"}
+function uvm:add_tool {namespace: "minecraft", id: "copper_shovel", category: "shovel"}
 
 scoreboard objectives add uvm.b.minecraft.coal_ore minecraft.mined:minecraft.coal_ore
 scoreboard objectives add uvm.b.minecraft.iron_ore minecraft.mined:minecraft.iron_ore
@@ -181,12 +184,15 @@ scoreboard objectives add uvm.t.minecraft.iron_pickaxe minecraft.used:minecraft.
 scoreboard objectives add uvm.t.minecraft.golden_pickaxe minecraft.used:minecraft.golden_pickaxe
 scoreboard objectives add uvm.t.minecraft.diamond_pickaxe minecraft.used:minecraft.diamond_pickaxe
 scoreboard objectives add uvm.t.minecraft.netherite_pickaxe minecraft.used:minecraft.netherite_pickaxe
+scoreboard objectives add uvm.t.minecraft.copper_pickaxe minecraft.used:minecraft.copper_pickaxe
+
 scoreboard objectives add uvm.t.minecraft.wooden_axe minecraft.used:minecraft.wooden_axe
 scoreboard objectives add uvm.t.minecraft.stone_axe minecraft.used:minecraft.stone_axe
 scoreboard objectives add uvm.t.minecraft.iron_axe minecraft.used:minecraft.iron_axe
 scoreboard objectives add uvm.t.minecraft.golden_axe minecraft.used:minecraft.golden_axe
 scoreboard objectives add uvm.t.minecraft.diamond_axe minecraft.used:minecraft.diamond_axe
 scoreboard objectives add uvm.t.minecraft.netherite_axe minecraft.used:minecraft.netherite_axe
+scoreboard objectives add uvm.t.minecraft.copper_axe minecraft.used:minecraft.copper_axe
 
 execute unless data storage uvm:data custom_blocks run data modify storage uvm:data custom_blocks set value {pickaxe: [], axe: [], shovel: [], hoe: []}
 
