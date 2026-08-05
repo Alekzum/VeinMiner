@@ -17,4 +17,4 @@ jobs:
         uses: ChenCMD/datapack-linter@v2.0.10
         with:
           GITHUB_TOKEN: ${{ github.token }}
-          lintDirectory: src/
+          lintDirectory: .
