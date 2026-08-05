@@ -4,17 +4,15 @@ on:
   pull_request:
     branches: [ "main" ]
   workflow_dispatch:
+  workflow_call:
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: datapack-linter
         uses: ChenCMD/datapack-linter@v2.0.10
         with:
-          # A GitHub token. It is recommended that this token be set when using linter in pull_request events.
           GITHUB_TOKEN: ${{ github.token }}
-          # Lint base directory.
           lintDirectory: src/
