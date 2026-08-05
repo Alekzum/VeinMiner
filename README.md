@@ -9,16 +9,20 @@ There is 4 configurable categories:
 - shovel - gravel? clay?
 - hoe.
 
-## Compatibility
+## Quality of Life things
+
+If ore and his neighbor is around air when they're both will be mined. Preview (on crouch) also will show it
+
+## Configurable
 
 Configurable? ~~/add_*~~ `/function uvm:add_*` commands for every tool. Syntax a little bit complicated
 
 ### Add tools
 
-- `/function umv:add_ore {b:'cobblestone'}` - Pickaxe
-- `/function umv:add_log {b:'bamboo_block'}` - Axe. Im not sure with this
+- `/function umv:add_ore {b:'cobblestone'}` - Pickaxe. Like "add ore from **b**lock *cobblestone*"
+- `/function umv:add_log {b:'bamboo_block'}` - Axe. Im not sure with this, just not tested xd
 - `/function umv:add_dig {b:'gravel'}` - shovel
-- `/function umv:add_harvest {b:'sculk'}` - hoe. is there a good verb for that thing?
+- `/function umv:add_harvest {b:'sculk'}` - hoe. is there a good verb for that thing? Also whole vein of sculk will not mined bc skulk not drops any items on destroy
 
 ### Add blocks
 
