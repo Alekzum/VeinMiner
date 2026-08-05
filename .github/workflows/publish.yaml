@@ -15,7 +15,7 @@ jobs:
       - name: Download Built ZIP
         uses: actions/download-artifact@v4
         with:
-          name: Latest release
+          name: release-${{ github.event.release.tag_name }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
           path: ./vein-miner.zip
 
