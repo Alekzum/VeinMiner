@@ -1,0 +1,45 @@
+name: Publish Datapack
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Update pack.mcmeta version
+        env:
+          RELEASE_VERSION: ${{ github.event.release.tag_name }}
+        run: |
+          if [ -f "src/pack.mcmeta" ]; then
+            jq --arg ver "\n\u00A77Version $RELEASE_VERSION" '.pack.description |= . + $ver' src/pack.mcmeta > src/pack.mcmeta.tmp && mv src/pack.mcmeta.tmp src/pack.mcmeta
+          fi
+
+      - name: Archive files
+        run: |
+          mkdir -p dist
+          cd src
+          zip -r ../dist/vein-miner.zip .
+
+      - name: Publish on Modrinth
+        uses: cloudnode-pro/modrinth-publish@v2
+        with:
+          token: ${{ secrets.MODRINTH_TOKEN }}
+          project: sQRiyYyA
+          version: ${{ github.event.release.tag_name }}
+          loaders: datapack
+          game-versions: |
+            1.20.5
+            1.21.x
+            26.1.x
+            26.2.x
+          files: dist/vein-miner.zip
+          primary-file: vein-miner.zip
+          environment: server_only
+          changelog: ${{ github.event.release.body }}
+        
