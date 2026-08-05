@@ -17,7 +17,7 @@ jobs:
         with:
           name: vein-miner.zip
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          run-id: ${{ github.event.release.target_commitish == 'main' && github.run_id }}
+          run-id: ${{ github.run_id }}
 
       - name: Publish on Modrinth
         uses: cloudnode-pro/modrinth-publish@v2
