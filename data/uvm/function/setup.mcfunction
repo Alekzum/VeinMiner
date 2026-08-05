@@ -6,7 +6,7 @@ scoreboard objectives add uvm.enchant dummy
 scoreboard objectives add uvm.temp dummy
 scoreboard objectives add uvm.preview dummy
 
-data modify storage uvm:data category set value {pickaxe: 1b, axe: 1b, shovel: 1b, hoe: 0b}
+data modify storage uvm:data category set value {pickaxe: 1b, axe: 1b, shovel: 1b, hoe: 1b}
 
 execute unless score initialized uvm.config matches 1.. run function uvm:reset_config
 

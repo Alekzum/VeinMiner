@@ -77,6 +77,19 @@ function uvm:add_block {namespace: "minecraft", id: "stripped_pale_oak_wood", ca
 function uvm:add_block {namespace: "minecraft", id: "stripped_crimson_hyphae", category: "axe"}
 function uvm:add_block {namespace: "minecraft", id: "stripped_warped_hyphae", category: "axe"}
 
+function uvm:add_block {namespace: "minecraft", id: "oak_leaves", category: "hoe"}
+function uvm:add_block {namespace: "minecraft", id: "spruce_leaves", category: "hoe"}
+function uvm:add_block {namespace: "minecraft", id: "birch_leaves", category: "hoe"}
+function uvm:add_block {namespace: "minecraft", id: "jungle_leaves", category: "hoe"}
+function uvm:add_block {namespace: "minecraft", id: "acacia_leaves", category: "hoe"}
+function uvm:add_block {namespace: "minecraft", id: "dark_oak_leaves", category: "hoe"}
+function uvm:add_block {namespace: "minecraft", id: "mangrove_leaves", category: "hoe"}
+function uvm:add_block {namespace: "minecraft", id: "cherry_leaves", category: "hoe"}
+function uvm:add_block {namespace: "minecraft", id: "pale_oak_leaves", category: "hoe"}
+function uvm:add_block {namespace: "minecraft", id: "nether_wart_block", category: "hoe"}
+function uvm:add_block {namespace: "minecraft", id: "warped_wart_block", category: "hoe"}
+function uvm:add_block {namespace: "minecraft", id: "shroomlight", category: "hoe"}
+
 data remove storage uvm:data tools
 
 data modify storage uvm:data tools.pickaxe set value []
@@ -107,6 +120,14 @@ function uvm:add_tool {namespace: "minecraft", id: "golden_shovel", category: "s
 function uvm:add_tool {namespace: "minecraft", id: "diamond_shovel", category: "shovel"}
 function uvm:add_tool {namespace: "minecraft", id: "netherite_shovel", category: "shovel"}
 function uvm:add_tool {namespace: "minecraft", id: "copper_shovel", category: "shovel"}
+
+function uvm:add_tool {namespace: "minecraft", id: "wooden_hoe", category: "hoe"}
+function uvm:add_tool {namespace: "minecraft", id: "stone_hoe", category: "hoe"}
+function uvm:add_tool {namespace: "minecraft", id: "iron_hoe", category: "hoe"}
+function uvm:add_tool {namespace: "minecraft", id: "golden_hoe", category: "hoe"}
+function uvm:add_tool {namespace: "minecraft", id: "diamond_hoe", category: "hoe"}
+function uvm:add_tool {namespace: "minecraft", id: "netherite_hoe", category: "hoe"}
+function uvm:add_tool {namespace: "minecraft", id: "copper_hoe", category: "hoe"}
 
 scoreboard objectives add uvm.b.minecraft.coal_ore minecraft.mined:minecraft.coal_ore
 scoreboard objectives add uvm.b.minecraft.iron_ore minecraft.mined:minecraft.iron_ore
@@ -201,6 +222,14 @@ scoreboard objectives add uvm.t.minecraft.golden_shovel minecraft.used:minecraft
 scoreboard objectives add uvm.t.minecraft.diamond_shovel minecraft.used:minecraft.diamond_shovel
 scoreboard objectives add uvm.t.minecraft.netherite_shovel minecraft.used:minecraft.netherite_shovel
 scoreboard objectives add uvm.t.minecraft.copper_shovel minecraft.used:minecraft.copper_shovel
+
+scoreboard objectives add uvm.t.minecraft.wooden_hoe minecraft.used:minecraft.wooden_hoe
+scoreboard objectives add uvm.t.minecraft.stone_hoe minecraft.used:minecraft.stone_hoe
+scoreboard objectives add uvm.t.minecraft.iron_hoe minecraft.used:minecraft.iron_hoe
+scoreboard objectives add uvm.t.minecraft.golden_hoe minecraft.used:minecraft.golden_hoe
+scoreboard objectives add uvm.t.minecraft.diamond_hoe minecraft.used:minecraft.diamond_hoe
+scoreboard objectives add uvm.t.minecraft.netherite_hoe minecraft.used:minecraft.netherite_hoe
+scoreboard objectives add uvm.t.minecraft.copper_hoe minecraft.used:minecraft.copper_hoe
 
 execute unless data storage uvm:data custom_blocks run data modify storage uvm:data custom_blocks set value {pickaxe: [], axe: [], shovel: [], hoe: []}
 
