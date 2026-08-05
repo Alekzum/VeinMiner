@@ -24,6 +24,14 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Update pack.mcmeta version
+        env:
+          RELEASE_VERSION: ${{ inputs.tag_name || github.ref_name }}
+        run: |
+          if [ -f "src/pack.mcmeta" ]; then
+            jq --arg ver "\n\u00A77Version $RELEASE_VERSION" '.pack.description |= . + $ver' src/pack.mcmeta > src/pack.mcmeta.tmp && mv src/pack.mcmeta.tmp src/pack.mcmeta
+          fi
+
       - name: Archive files
         run: |
           mkdir -p dist
