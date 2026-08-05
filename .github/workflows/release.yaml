@@ -1,4 +1,4 @@
-name: Check, Archive and Release
+name: Archive and release
 
 on:
   push:

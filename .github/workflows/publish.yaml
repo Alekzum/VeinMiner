@@ -1,4 +1,4 @@
-name: Publish Datapack
+name: Get and publish
 
 on:
   release:

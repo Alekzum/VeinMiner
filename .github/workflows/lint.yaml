@@ -1,4 +1,4 @@
-name: Lint Datapack
+name: Lint
 
 on:
   push:
