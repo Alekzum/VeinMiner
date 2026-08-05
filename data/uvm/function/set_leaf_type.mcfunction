@@ -1,3 +1,4 @@
+# temp1: {current: {namespace: string, id: string}, mining_mode: string{ore|tree}}
 
 execute if data storage uvm:data temp1{current:{id:"oak_log"}} run data modify storage uvm:data temp1.leaf_type set value "oak_leaves"
 execute if data storage uvm:data temp1{current:{id:"stripped_oak_log"}} run data modify storage uvm:data temp1.leaf_type set value "oak_leaves"

@@ -1,4 +1,4 @@
-
+# temp0: {list: array{namespace: string, id: string}, current: {namespace: string, id: string}, type: string, mining_mode: string}
 data modify storage uvm:data temp0.current set from storage uvm:data temp0.list[-1]
 data remove storage uvm:data temp0.list[-1]
 

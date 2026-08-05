@@ -4,6 +4,7 @@ data modify storage uvm:data temp0.list set from storage uvm:data blocks.hoe
 # temp0 contains array of block types to check and custom blocks if they exist
 execute if data storage uvm:data custom_blocks.hoe[0] run data modify storage uvm:data temp0.list append from storage uvm:data custom_blocks.hoe[]
 
+# temp0: {list: array{namespace: string, id: string}, current: {namespace: string, id: string}, type: string, mining_mode: string}
 data modify storage uvm:data temp0.type set value "hoe"
 data modify storage uvm:data temp0.mining_mode set value "ore"
 
