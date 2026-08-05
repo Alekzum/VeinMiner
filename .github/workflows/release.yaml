@@ -36,6 +36,15 @@ jobs:
         run: |
           mkdir -p dist
           zip -r ./dist/vein-miner.zip data/ pack.png pack.mcmeta 
+      
+      - name: Create GitHub Artifact
+        # to publish it later in ./publish.yaml workflow
+        if: startsWith(github.ref, 'refs/tags/v') || inputs.tag_name != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: "Latest release"
+          path: ./dist/vein-miner.zip
+          compression-level: 0
 
       - name: Create GitHub Release
         if: startsWith(github.ref, 'refs/tags/v') || inputs.tag_name != ''
