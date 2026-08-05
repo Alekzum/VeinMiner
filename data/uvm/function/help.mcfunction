@@ -16,5 +16,6 @@ tellraw @a ["", {"text": "  /function uvm:add_mod {m:\"create\", b:\"zinc_ore\",
 tellraw @a ""
 tellraw @a ["", {"text": "Other Commands:", "color": "yellow"}]
 tellraw @a ["", {"text": "  /function uvm:list_custom_blocks", "color": "gray"}]
+tellraw @a ["", {"text": "  /function uvm:remove_custom_block {namespace:\"minecraft\",id:\"oak_leaves\"}", "color": "aqua"}]
 tellraw @a ""
 tellraw @a ["", {"text": "Categories: ", "color": "yellow"}, {"text": "pickaxe=ores, axe=logs, shovel=dirt, hoe=harvest", "color": "white"}]
