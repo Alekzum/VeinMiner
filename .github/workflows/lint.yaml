@@ -1,3 +1,5 @@
+name: Lint Datapack
+
 on:
   push:
     branches: [ "main" ]
