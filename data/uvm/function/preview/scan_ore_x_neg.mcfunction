@@ -9,7 +9,3 @@ execute if block ~-1 ~ ~-1 air run function uvm:preview/scan_ore_z_neg_x_neg
 execute if block ~-1 ~ ~1 air run function uvm:preview/scan_ore_z_pos_x_neg
 execute if block ~-1 ~-1 ~ air run function uvm:preview/scan_ore_y_neg_x_neg
 execute if block ~-1 ~1 ~ air run function uvm:preview/scan_ore_y_pos_x_neg
-
-
-
-
