@@ -16,15 +16,14 @@ jobs:
         env:
           RELEASE_VERSION: ${{ github.event.release.tag_name }}
         run: |
-          if [ -f "src/pack.mcmeta" ]; then
-            jq --arg ver "\n\u00A77Version $RELEASE_VERSION" '.pack.description |= . + $ver' src/pack.mcmeta > src/pack.mcmeta.tmp && mv src/pack.mcmeta.tmp src/pack.mcmeta
+          if [ -f "./pack.mcmeta" ]; then
+            jq --arg ver "\n\u00A77Version $RELEASE_VERSION" '.pack.description |= . + $ver' ./pack.mcmeta > ./pack.mcmeta.tmp && mv ./pack.mcmeta.tmp ./pack.mcmeta
           fi
 
       - name: Archive files
         run: |
           mkdir -p dist
-          cd src
-          zip -r ../dist/vein-miner.zip .
+          zip -r ./dist/vein-miner.zip data/ pack.png pack.mcmeta 
 
       - name: Publish on Modrinth
         uses: cloudnode-pro/modrinth-publish@v2
@@ -38,7 +37,7 @@ jobs:
             1.21.x
             26.1.x
             26.2.x
-          files: dist/vein-miner.zip
+          files: ./dist/vein-miner.zip
           primary-file: vein-miner.zip
           environment: server_only
           changelog: ${{ github.event.release.body }}
