@@ -11,19 +11,13 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-
-      - name: Update pack.mcmeta version
-        env:
-          RELEASE_VERSION: ${{ github.event.release.tag_name }}
-        run: |
-          if [ -f "./pack.mcmeta" ]; then
-            jq --arg ver "\n\u00A77Version $RELEASE_VERSION" '.pack.description |= . + $ver' ./pack.mcmeta > ./pack.mcmeta.tmp && mv ./pack.mcmeta.tmp ./pack.mcmeta
-          fi
-
-      - name: Archive files
-        run: |
-          mkdir -p dist
-          zip -r ./dist/vein-miner.zip data/ pack.png pack.mcmeta 
+        
+      - name: Download Built ZIP
+        uses: actions/download-artifact@v4
+        with:
+          name: vein-miner.zip
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          run-id: ${{ github.event.release.target_commitish == 'main' && github.run_id }}
 
       - name: Publish on Modrinth
         uses: cloudnode-pro/modrinth-publish@v2
@@ -37,7 +31,7 @@ jobs:
             1.21.x
             26.1.x
             26.2.x
-          files: ./dist/vein-miner.zip
+          files: ./vein-miner.zip
           primary-file: vein-miner.zip
           environment: server_only
           changelog: ${{ github.event.release.body }}
