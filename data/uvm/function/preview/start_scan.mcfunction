@@ -1,4 +1,3 @@
-
 scoreboard players set preview_found uvm.preview 1
 
 data modify storage uvm:data preview.target set from storage uvm:data preview.current

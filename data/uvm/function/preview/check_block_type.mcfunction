@@ -1,4 +1,3 @@
-
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:wooden_pickaxe"}}] run function uvm:preview/check_pickaxe_blocks
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:stone_pickaxe"}}] run function uvm:preview/check_pickaxe_blocks
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:iron_pickaxe"}}] run function uvm:preview/check_pickaxe_blocks

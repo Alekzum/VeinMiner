@@ -1,4 +1,3 @@
-
 tellraw @a ["", {"text": "=== Universal Vein Miner ===", "color": "gold", "bold": true}]
 tellraw @a ""
 tellraw @a ["", {"text": "Usage:", "color": "yellow"}, {"text": " Crouch + Break block with correct tool", "color": "white"}]

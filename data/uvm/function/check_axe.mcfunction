@@ -1,4 +1,3 @@
-
 data modify storage uvm:data temp0.list set from storage uvm:data blocks.axe
 
 execute if data storage uvm:data custom_blocks.axe[0] run data modify storage uvm:data temp0.list append from storage uvm:data custom_blocks.axe[]

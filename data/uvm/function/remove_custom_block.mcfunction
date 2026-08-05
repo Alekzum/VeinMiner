@@ -1,4 +1,3 @@
-
 $execute store success score r1 uvm.temp run data remove storage uvm:data custom_blocks.pickaxe[{namespace: "$(namespace)", id: "$(id)"}]
 $execute store success score r2 uvm.temp run data remove storage uvm:data custom_blocks.axe[{namespace: "$(namespace)", id: "$(id)"}]
 $execute store success score r3 uvm.temp run data remove storage uvm:data custom_blocks.shovel[{namespace: "$(namespace)", id: "$(id)"}]

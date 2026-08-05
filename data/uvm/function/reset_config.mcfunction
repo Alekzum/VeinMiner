@@ -1,4 +1,3 @@
-
 data remove storage uvm:data blocks
 
 data modify storage uvm:data blocks.pickaxe set value []

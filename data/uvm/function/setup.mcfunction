@@ -1,4 +1,3 @@
-
 scoreboard objectives add uvm.config dummy
 scoreboard objectives add uvm.cooldown dummy
 scoreboard objectives add uvm.silk dummy

@@ -1,4 +1,3 @@
-
 data modify storage uvm:data preview.list set from storage uvm:data blocks.shovel
 
 execute if data storage uvm:data custom_blocks.shovel[0] run data modify storage uvm:data preview.list append from storage uvm:data custom_blocks.shovel[]

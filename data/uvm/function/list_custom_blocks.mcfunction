@@ -1,4 +1,3 @@
-
 tellraw @a ["", {"text": "[UVM] ", "color": "gold"}, {"text": "=== Custom Blocks ===", "color": "aqua"}]
 
 tellraw @a ["", {"text": "Pickaxe: ", "color": "yellow"}, {"nbt": "custom_blocks.pickaxe", "storage": "uvm:data", "color": "white", "interpret": false}]

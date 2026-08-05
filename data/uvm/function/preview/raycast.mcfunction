@@ -1,4 +1,3 @@
-
 execute unless block ~ ~ ~ air run function uvm:preview/found_block
 
 scoreboard players add raycast_dist uvm.preview 1

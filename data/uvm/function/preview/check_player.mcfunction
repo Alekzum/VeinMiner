@@ -1,4 +1,3 @@
-
 scoreboard players add @s uvm.preview 1
 
 execute unless score @s uvm.preview matches 7.. run return 0

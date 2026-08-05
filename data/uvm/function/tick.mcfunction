@@ -1,4 +1,3 @@
-
 execute if score system_disabled uvm.config matches 1 run return fail
 
 function uvm:check_tools
