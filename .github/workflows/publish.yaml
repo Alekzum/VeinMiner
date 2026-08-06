@@ -4,6 +4,18 @@ on:
   release:
     types: [published]
   workflow_dispatch:
+    inputs:
+      tag_name:
+        description: 'Version tag for the release to publish (for manual run only)'
+        required: false
+        type: string
+
+permissions:
+  contents: read
+
+env:
+  RELEASE_TAG: ${{ github.event.release.tag_name || github.event.inputs.tag_name }}
+  CHANGELOG: ${{ github.event.release.body || '' }}
 
 jobs:
   build-and-publish:
@@ -11,20 +23,55 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-        
-      - name: Download Built ZIP
-        uses: actions/download-artifact@v4
         with:
-          name: latest-release
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          path: ./vein-miner.zip
+          fetch-depth: 0
+
+      - name: Validate release tag (only for workflow_dispatch)
+        if: github.event_name == 'workflow_dispatch'
+        run: |
+          if [ -z "${RELEASE_TAG}" ]; then
+            echo "Release tag is required when using workflow_dispatch"
+            exit 1
+          fi
+        env:
+          RELEASE_TAG: ${{ env.RELEASE_TAG }}
+
+      - name: Install GitHub CLI
+        uses: actions/setup-gh@v5
+
+      - name: Download built ZIP from release asset
+        run: |
+          set -euo pipefail
+          for i in 1 2 3 4 5; do
+            if gh release download "${RELEASE_TAG}" --repo "${{ github.repository }}" --pattern "vein-miner*.zip" --dir .; then
+              break
+            fi
+            echo "Download attempt $i failed, retrying in 5s..."
+            sleep 5
+            if [ $i -eq 5 ]; then
+              echo "Failed to download release asset after retries"
+              gh release view "${RELEASE_TAG}" --repo "${{ github.repository }}" --json assets --jq '.assets[] | {name: .name, size: .size}'
+              exit 1
+            fi
+          done
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Verify downloaded ZIP
+        run: |
+          if [ ! -f "./vein-miner.zip" ]; then
+            echo "vein-miner.zip not found"
+            ls -la
+            exit 1
+          fi
+          unzip -l vein-miner.zip
 
       - name: Publish on Modrinth
         uses: cloudnode-pro/modrinth-publish@v2
         with:
           token: ${{ secrets.MODRINTH_TOKEN }}
           project: sQRiyYyA
-          version: ${{ github.event.release.tag_name }}
+          version: ${{ env.RELEASE_TAG }}
           loaders: datapack
           game-versions: |
             1.20.5
@@ -34,5 +81,4 @@ jobs:
           files: ./vein-miner.zip
           primary-file: vein-miner.zip
           environment: server_only
-          changelog: ${{ github.event.release.body }}
-        
+          changelog: ${{ env.CHANGELOG }}
