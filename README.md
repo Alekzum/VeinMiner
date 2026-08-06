@@ -2,6 +2,8 @@
 
 > Just crouch, look at one single ore from vein - you'll see the preview. Mine one - and all at once!
 
+[![Lint](https://github.com/Alekzum/VeinMiner/actions/workflows/lint.yaml/badge.svg?event=push)](https://github.com/Alekzum/VeinMiner/actions/workflows/lint.yaml) [![Archive and release](https://github.com/Alekzum/VeinMiner/actions/workflows/release.yaml/badge.svg)](https://github.com/Alekzum/VeinMiner/actions/workflows/release.yaml)
+
 There is 4 configurable categories:
 
 - pickaxe - diamonds, nether_quartz ad emeralds
