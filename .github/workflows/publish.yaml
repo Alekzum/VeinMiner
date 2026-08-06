@@ -4,6 +4,15 @@ on:
   release:
     types: [published]
   workflow_dispatch:
+    inputs:
+      tag_name:
+        description: 'Version tag for the release to publish (for manual run only)'
+        required: false
+        type: string
+
+env:
+  RELEASE_TAG: ${{ github.event.release.tag_name || github.event.inputs.tag_name }}
+  CHANGELOG: ${{ github.event.release.body || '' }}
 
 jobs:
   build-and-publish:
@@ -11,20 +20,38 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-        
-      - name: Download Built ZIP
-        uses: actions/download-artifact@v4
-        with:
-          name: latest-release
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          path: ./vein-miner.zip
+
+      - name: Validate release tag
+        run: |
+          if [ -z "${RELEASE_TAG}" ]; then
+            echo "Release tag is required when using workflow_dispatch"
+            exit 1
+          fi
+        env:
+          RELEASE_TAG: ${{ env.RELEASE_TAG }}
+
+      - name: Install GitHub CLI
+        uses: actions/setup-gh@v5
+
+      - name: Authenticate GitHub CLI
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "${GITHUB_TOKEN}" | gh auth login --with-token
+
+      - name: Download built ZIP from release asset
+        run: |
+          gh release download "${RELEASE_TAG}" \
+            --repo "${{ github.repository }}" \
+            --pattern "vein-miner.zip" \
+            --dir .
 
       - name: Publish on Modrinth
         uses: cloudnode-pro/modrinth-publish@v2
         with:
           token: ${{ secrets.MODRINTH_TOKEN }}
           project: sQRiyYyA
-          version: ${{ github.event.release.tag_name }}
+          version: ${{ env.RELEASE_TAG }}
           loaders: datapack
           game-versions: |
             1.20.5
@@ -34,5 +61,5 @@ jobs:
           files: ./vein-miner.zip
           primary-file: vein-miner.zip
           environment: server_only
-          changelog: ${{ github.event.release.body }}
+          changelog: ${{ env.CHANGELOG }}
         
