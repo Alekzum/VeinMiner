@@ -11,7 +11,7 @@ tellraw @a ["", {"text": "  /function uvm:add_dig {b:\"gravel\"}", "color": "aqu
 tellraw @a ["", {"text": "  /function uvm:add_harvest {b:\"oak_leaves\"}", "color": "aqua"}]
 tellraw @a ""
 tellraw @a ["", {"text": "Modded Blocks:", "color": "yellow"}]
-tellraw @a ["", {"text": "  /function uvm:add_mod {m:\"create\", b:\"zinc_ore\", c:\"pickaxe\"}", "color": "aqua"}]
+tellraw @a ["", {"text": "  /function uvm:add_block {m:\"create\", b:\"zinc_ore\", c:\"pickaxe\"}", "color": "aqua"}]
 tellraw @a ""
 tellraw @a ["", {"text": "Other Commands:", "color": "yellow"}]
 tellraw @a ["", {"text": "  /function uvm:list_custom_blocks", "color": "gray"}]

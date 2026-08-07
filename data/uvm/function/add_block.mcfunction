@@ -1,1 +1,1 @@
-$data modify storage uvm:data blocks.$(category) append value {namespace: "$(namespace)", id: "$(id)"}
+$function uvm:add_custom_block {namespace:"$(m)", id:"$(b)", category:"$(c)"}

@@ -1,0 +1,88 @@
+data remove storage uvm:data blocks
+data modify storage uvm:data blocks.pickaxe set value []
+data modify storage uvm:data blocks.axe set value []
+data modify storage uvm:data blocks.shovel set value []
+data modify storage uvm:data blocks.hoe set value []
+
+function uvm:reset_config/add_block {namespace: "minecraft", id: "coal_ore", category: "pickaxe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "iron_ore", category: "pickaxe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "copper_ore", category: "pickaxe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "gold_ore", category: "pickaxe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "redstone_ore", category: "pickaxe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "emerald_ore", category: "pickaxe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "lapis_ore", category: "pickaxe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "diamond_ore", category: "pickaxe"}
+
+function uvm:reset_config/add_block {namespace: "minecraft", id: "deepslate_coal_ore", category: "pickaxe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "deepslate_iron_ore", category: "pickaxe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "deepslate_copper_ore", category: "pickaxe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "deepslate_gold_ore", category: "pickaxe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "deepslate_redstone_ore", category: "pickaxe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "deepslate_emerald_ore", category: "pickaxe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "deepslate_lapis_ore", category: "pickaxe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "deepslate_diamond_ore", category: "pickaxe"}
+
+function uvm:reset_config/add_block {namespace: "minecraft", id: "nether_quartz_ore", category: "pickaxe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "nether_gold_ore", category: "pickaxe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "ancient_debris", category: "pickaxe"}
+
+function uvm:reset_config/add_block {namespace: "minecraft", id: "oak_log", category: "axe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "spruce_log", category: "axe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "birch_log", category: "axe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "jungle_log", category: "axe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "acacia_log", category: "axe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "dark_oak_log", category: "axe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "mangrove_log", category: "axe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "cherry_log", category: "axe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "pale_oak_log", category: "axe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "crimson_stem", category: "axe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "warped_stem", category: "axe"}
+
+function uvm:reset_config/add_block {namespace: "minecraft", id: "stripped_oak_log", category: "axe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "stripped_spruce_log", category: "axe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "stripped_birch_log", category: "axe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "stripped_jungle_log", category: "axe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "stripped_acacia_log", category: "axe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "stripped_dark_oak_log", category: "axe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "stripped_mangrove_log", category: "axe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "stripped_cherry_log", category: "axe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "stripped_pale_oak_log", category: "axe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "stripped_crimson_stem", category: "axe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "stripped_warped_stem", category: "axe"}
+
+function uvm:reset_config/add_block {namespace: "minecraft", id: "oak_wood", category: "axe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "spruce_wood", category: "axe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "birch_wood", category: "axe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "jungle_wood", category: "axe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "acacia_wood", category: "axe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "dark_oak_wood", category: "axe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "mangrove_wood", category: "axe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "cherry_wood", category: "axe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "pale_oak_wood", category: "axe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "crimson_hyphae", category: "axe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "warped_hyphae", category: "axe"}
+
+function uvm:reset_config/add_block {namespace: "minecraft", id: "stripped_oak_wood", category: "axe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "stripped_spruce_wood", category: "axe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "stripped_birch_wood", category: "axe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "stripped_jungle_wood", category: "axe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "stripped_acacia_wood", category: "axe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "stripped_dark_oak_wood", category: "axe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "stripped_mangrove_wood", category: "axe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "stripped_cherry_wood", category: "axe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "stripped_pale_oak_wood", category: "axe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "stripped_crimson_hyphae", category: "axe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "stripped_warped_hyphae", category: "axe"}
+
+function uvm:reset_config/add_block {namespace: "minecraft", id: "oak_leaves", category: "hoe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "spruce_leaves", category: "hoe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "birch_leaves", category: "hoe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "jungle_leaves", category: "hoe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "acacia_leaves", category: "hoe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "dark_oak_leaves", category: "hoe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "mangrove_leaves", category: "hoe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "cherry_leaves", category: "hoe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "pale_oak_leaves", category: "hoe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "nether_wart_block", category: "hoe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "warped_wart_block", category: "hoe"}
+function uvm:reset_config/add_block {namespace: "minecraft", id: "shroomlight", category: "hoe"}
