@@ -9,11 +9,11 @@ execute if score sneak_mode uvm.config matches 1 unless predicate uvm:is_sneakin
 execute if entity @s[scores={uvm.cooldown=1..}] run return fail
 
 scoreboard players set @s uvm.silk 0
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:enchantments":{"minecraft:silk_touch":1}}}}] run scoreboard players set @s uvm.silk 10
+execute if items entity @s weapon.mainhand *[enchantments~[{silk_touch:3}]] run scoreboard players set @s uvm.silk 10
 
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:enchantments":{"minecraft:fortune":1}}}}] run scoreboard players set @s uvm.silk 1
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:enchantments":{"minecraft:fortune":2}}}}] run scoreboard players set @s uvm.silk 2
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:enchantments":{"minecraft:fortune":3}}}}] run scoreboard players set @s uvm.silk 3
+execute if items entity @s weapon.mainhand *[enchantments~[{fortune:1}]] run scoreboard players set @s uvm.silk 1
+execute if items entity @s weapon.mainhand *[enchantments~[{fortune:2}]] run scoreboard players set @s uvm.silk 2
+execute if items entity @s weapon.mainhand *[enchantments~[{fortune:3}]] run scoreboard players set @s uvm.silk 3
 
 data modify storage uvm:data temp1.current set from storage uvm:data temp0.current
 data modify storage uvm:data temp1.mining_mode set from storage uvm:data temp0.mining_mode
