@@ -1,0 +1,14 @@
+execute positioned ~ ~ ~1 if block ~ ~ ~ minecraft:jungle_log run function uvm:breaks/jungle_log
+execute positioned ~ ~ ~-1 if block ~ ~ ~ minecraft:jungle_log run function uvm:breaks/jungle_log
+execute positioned ~1 ~ ~ if block ~ ~ ~ minecraft:jungle_log run function uvm:breaks/jungle_log
+execute positioned ~-1 ~ ~ if block ~ ~ ~ minecraft:jungle_log run function uvm:breaks/jungle_log
+execute positioned ~ ~1 ~ if block ~ ~ ~ minecraft:jungle_log run function uvm:breaks/jungle_log
+execute positioned ~ ~-1 ~ if block ~ ~ ~ minecraft:jungle_log run function uvm:breaks/jungle_log
+execute positioned ~1 ~1 ~ if block ~ ~ ~ minecraft:jungle_log run function uvm:breaks/jungle_log
+execute positioned ~-1 ~1 ~ if block ~ ~ ~ minecraft:jungle_log run function uvm:breaks/jungle_log
+execute positioned ~ ~1 ~1 if block ~ ~ ~ minecraft:jungle_log run function uvm:breaks/jungle_log
+execute positioned ~ ~1 ~-1 if block ~ ~ ~ minecraft:jungle_log run function uvm:breaks/jungle_log
+execute positioned ~1 ~1 ~1 if block ~ ~ ~ minecraft:jungle_log run function uvm:breaks/jungle_log
+execute positioned ~1 ~1 ~-1 if block ~ ~ ~ minecraft:jungle_log run function uvm:breaks/jungle_log
+execute positioned ~-1 ~1 ~1 if block ~ ~ ~ minecraft:jungle_log run function uvm:breaks/jungle_log
+execute positioned ~-1 ~1 ~-1 if block ~ ~ ~ minecraft:jungle_log run function uvm:breaks/jungle_log

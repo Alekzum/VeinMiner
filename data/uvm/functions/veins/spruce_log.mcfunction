@@ -1,0 +1,14 @@
+execute positioned ~ ~ ~1 if block ~ ~ ~ minecraft:spruce_log run function uvm:breaks/spruce_log
+execute positioned ~ ~ ~-1 if block ~ ~ ~ minecraft:spruce_log run function uvm:breaks/spruce_log
+execute positioned ~1 ~ ~ if block ~ ~ ~ minecraft:spruce_log run function uvm:breaks/spruce_log
+execute positioned ~-1 ~ ~ if block ~ ~ ~ minecraft:spruce_log run function uvm:breaks/spruce_log
+execute positioned ~ ~1 ~ if block ~ ~ ~ minecraft:spruce_log run function uvm:breaks/spruce_log
+execute positioned ~ ~-1 ~ if block ~ ~ ~ minecraft:spruce_log run function uvm:breaks/spruce_log
+execute positioned ~1 ~1 ~ if block ~ ~ ~ minecraft:spruce_log run function uvm:breaks/spruce_log
+execute positioned ~-1 ~1 ~ if block ~ ~ ~ minecraft:spruce_log run function uvm:breaks/spruce_log
+execute positioned ~ ~1 ~1 if block ~ ~ ~ minecraft:spruce_log run function uvm:breaks/spruce_log
+execute positioned ~ ~1 ~-1 if block ~ ~ ~ minecraft:spruce_log run function uvm:breaks/spruce_log
+execute positioned ~1 ~1 ~1 if block ~ ~ ~ minecraft:spruce_log run function uvm:breaks/spruce_log
+execute positioned ~1 ~1 ~-1 if block ~ ~ ~ minecraft:spruce_log run function uvm:breaks/spruce_log
+execute positioned ~-1 ~1 ~1 if block ~ ~ ~ minecraft:spruce_log run function uvm:breaks/spruce_log
+execute positioned ~-1 ~1 ~-1 if block ~ ~ ~ minecraft:spruce_log run function uvm:breaks/spruce_log

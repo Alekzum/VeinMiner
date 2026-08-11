@@ -1,0 +1,14 @@
+execute positioned ~ ~ ~1 if block ~ ~ ~ minecraft:dark_oak_log run function uvm:breaks/dark_oak_log
+execute positioned ~ ~ ~-1 if block ~ ~ ~ minecraft:dark_oak_log run function uvm:breaks/dark_oak_log
+execute positioned ~1 ~ ~ if block ~ ~ ~ minecraft:dark_oak_log run function uvm:breaks/dark_oak_log
+execute positioned ~-1 ~ ~ if block ~ ~ ~ minecraft:dark_oak_log run function uvm:breaks/dark_oak_log
+execute positioned ~ ~1 ~ if block ~ ~ ~ minecraft:dark_oak_log run function uvm:breaks/dark_oak_log
+execute positioned ~ ~-1 ~ if block ~ ~ ~ minecraft:dark_oak_log run function uvm:breaks/dark_oak_log
+execute positioned ~1 ~1 ~ if block ~ ~ ~ minecraft:dark_oak_log run function uvm:breaks/dark_oak_log
+execute positioned ~-1 ~1 ~ if block ~ ~ ~ minecraft:dark_oak_log run function uvm:breaks/dark_oak_log
+execute positioned ~ ~1 ~1 if block ~ ~ ~ minecraft:dark_oak_log run function uvm:breaks/dark_oak_log
+execute positioned ~ ~1 ~-1 if block ~ ~ ~ minecraft:dark_oak_log run function uvm:breaks/dark_oak_log
+execute positioned ~1 ~1 ~1 if block ~ ~ ~ minecraft:dark_oak_log run function uvm:breaks/dark_oak_log
+execute positioned ~1 ~1 ~-1 if block ~ ~ ~ minecraft:dark_oak_log run function uvm:breaks/dark_oak_log
+execute positioned ~-1 ~1 ~1 if block ~ ~ ~ minecraft:dark_oak_log run function uvm:breaks/dark_oak_log
+execute positioned ~-1 ~1 ~-1 if block ~ ~ ~ minecraft:dark_oak_log run function uvm:breaks/dark_oak_log
