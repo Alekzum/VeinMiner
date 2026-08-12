@@ -1,7 +1,6 @@
 {
   "pack": {
-    "pack_format": 48,
-    "supported_formats": [41, 71],
+    "pack_format": 41,
     "description": "Universal Vein Miner - Ores, Trees & Custom Blocks with Preview"
   }
 }
