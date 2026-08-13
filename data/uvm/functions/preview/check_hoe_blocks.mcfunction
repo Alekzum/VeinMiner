@@ -1,4 +1,4 @@
-execute if score debug uvm.config matches 1 run tellraw @s [{text:"[check_hoe_blocks] ", color:"gray"}, "starting..."]
+# execute if score debug uvm.config matches 1 run tellraw @s [{"text":"[check_hoe_blocks] ", "color":"gray"}, "starting..."]
 
 data modify storage uvm:data preview.list set from storage uvm:data blocks.hoe
 
@@ -8,5 +8,5 @@ data modify storage uvm:data preview.mode set value "ore"
 
 scoreboard players set preview_found uvm.preview 0
 
-execute if score debug uvm.config matches 1 run tellraw @s [{text:"[check_hoe_blocks] ", color:"gray"}, "starting loop"]
+# execute if score debug uvm.config matches 1 run tellraw @s [{"text":"[check_hoe_blocks] ", "color":"gray"}, "starting loop"]
 execute if data storage uvm:data preview.list[0] run function uvm:preview/check_block_loop

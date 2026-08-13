@@ -1,0 +1,5 @@
+execute if score function_scan_result uvm.temp matches 1 run tellraw @s [{"text":"[start_scan] ", "color":"gray"}, {"text":"uvm:preview's scan ", "color": "gold"}, {"nbt":"preview.mode", "storage":"uvm:data", "interpret":false}, {"text":" - you'll mine whole vein. ", "color": "#00ff00"}, "Count: ", {"score":{"name": "preview_count", "objective": "uvm.preview"}} ]
+
+execute if score function_scan_result uvm.temp matches 2 run tellraw @s [{"text":"[start_scan] ", "color":"gray"}, {"text":"uvm:preview's scan ", "color": "gold"}, {"nbt":"preview.mode", "storage":"uvm:data", "interpret":false}, {"text":" - too big, didn't show full.", "color": "#ffff00"}, "Count: ", {"score":{"name": "preview_count", "objective": "uvm.preview"}} ]
+
+execute if score function_scan_result uvm.temp matches 0 run tellraw @s [{"text":"[start_scan] ", "color":"gray"}, {"text":"uvm:preview's scan ", "color": "gold"}, {"nbt":"preview.mode", "storage":"uvm:data", "interpret":false}, {"text":" - got error!", "color": "#ff0000"} ]
