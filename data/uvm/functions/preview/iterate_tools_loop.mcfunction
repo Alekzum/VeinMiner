@@ -1,5 +1,6 @@
 data modify storage uvm:data tempPreview2.current set from storage uvm:data tempPreview2.list[-1]
 data modify storage uvm:data tempPreview2.current.category set from storage uvm:data tempPreview2.category
+data modify storage uvm:data tempPreview2.current.mode set from storage uvm:data tempPreview2.mode
 data remove storage uvm:data tempPreview2.list[-1]
 # execute if score debug uvm.config matches 1 run tellraw @s [{"text":"[iterate_tools_loop] ", "color":"gray"}, {"text": "current: ", "color": "white"}, {"storage": "uvm:data", "nbt":"tempPreview2.current"}]
 
