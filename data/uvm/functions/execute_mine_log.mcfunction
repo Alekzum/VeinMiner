@@ -1,5 +1,5 @@
-execute if score @s uvm.silk matches 10 unless block ~ ~ ~ air run function uvm:silk_touch_effect
+loot spawn ~ ~ ~ mine ~ ~ ~ mainhand
 
-execute unless score @s uvm.silk matches 10 unless block ~ ~ ~ air run setblock ~ ~ ~ air destroy
+setblock ~ ~ ~ air
 
 function uvm:mine_tree
