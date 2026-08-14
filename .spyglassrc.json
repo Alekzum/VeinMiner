@@ -1,0 +1,21 @@
+{
+  "env": {
+    "dependencies": [
+      "@vanilla-mcdoc"
+    ],
+    "gameVersion": "1.20.5",
+    "feature": {
+      "codeActions": true,
+      "colors": true,
+      "completions": true,
+      "documentHighlighting": true,
+      "documentLinks": true,
+      "foldingRanges": true,
+      "formatting": true,
+      "hover": true,
+      "semanticColoring": true,
+      "selectionRanges": true,
+      "signatures": true
+    }
+  }
+}
