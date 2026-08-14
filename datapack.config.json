@@ -1,16 +1,16 @@
 {
-    "rules": {
-        "disabled": [
-            "scoreboard-fake-player-missing-hash"
-        ]
-    },
-    "executeGroup": {
-        "outputPath": "{dir}",
-        "outputName": "{name}_line_{line}"
-    },
-    "namingConvention": {
-        "scoreboardObjective": "([a-z]+\\.)*[a-z]",
-        "tag": "([a-z]+\\.)*[a-z]",
-        "team": "([a-z]+\\.)*[a-z]"
-    }
+  "rules": {
+    "disabled": [
+      "scoreboard-fake-player-missing-hash"
+    ]
+  },
+  "executeGroup": {
+    "outputPath": "{dir}",
+    "outputName": "{name}_line_{line}"
+  },
+  "namingConvention": {
+    "scoreboardObjective": "([a-z]+\\.)*[a-z]",
+    "tag": "([a-z]+\\.)*[a-z]",
+    "team": "([a-z]+\\.)*[a-z]"
+  }
 }

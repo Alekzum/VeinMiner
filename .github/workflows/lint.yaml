@@ -13,10 +13,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: datapack-linter
-        uses: mcbeet/check-commands@v1.1.1
-        with:
-          source: .
-          stats: true
-          minecraft: 1.20
+      - name: setup environment
+        run: 
+          (curl -LsSf https://astral.sh/uv/install.sh | sh) && 
+          uv tool install beet --with mecha
 
+      - name: lint datapack
+        run:
+          beet build

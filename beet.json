@@ -1,0 +1,19 @@
+{
+  "name": "VeinMiner",
+  "description": "Universal Vein Miner - Ores, Trees & Custom Blocks with Preview",
+  "data_pack": {
+    "load": [
+      "."
+    ]
+  },
+  "output": "build",
+  "pipeline": [
+    "mecha"
+  ],
+  "meta": {
+    "mecha": {
+      "version": "1.20",
+      "multiline": true
+    }
+  }
+}

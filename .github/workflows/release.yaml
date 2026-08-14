@@ -32,10 +32,11 @@ jobs:
             jq --arg ver "\n\u00A77Version $RELEASE_VERSION" '.pack.description |= . + $ver' ./pack.mcmeta > ./pack.mcmeta.tmp && mv ./pack.mcmeta.tmp ./pack.mcmeta
           fi
 
-      - name: Archive files
-        run: |
-          mkdir -p dist
-          zip -r ./dist/vein-miner.zip data/ pack.png pack.mcmeta 
+      - name: Get build
+        run: (curl -LsSf https://astral.sh/uv/install.sh | sh) && 
+          uv tool install beet --with mecha &&
+          beet build && 
+          zip -r ./build/vein-miner.zip ./build/veinminer_data_pack/
 
       - name: Create GitHub Release
         if: startsWith(github.ref, 'refs/tags/v') || inputs.tag_name != ''

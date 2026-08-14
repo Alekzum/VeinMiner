@@ -8,4 +8,3 @@ kill @e[distance=..5, y=-64, type=item]
 execute if score debug uvm.config matches 1 run tellraw @s [{"text":"[spawn_xp_via_break] ", "color":"gray"}, "generating motion"]
 execute as @e[distance=..5, y=-64, type=experience_orb] positioned ~ ~ ~ run function uvm:generate_random_motion
 setblock ~ -64 ~ bedrock
-

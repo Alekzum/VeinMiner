@@ -9,4 +9,3 @@ execute at @s run function uvm:preview/check_player
 
 scoreboard players set raycast_dist uvm.temp 0
 execute anchored eyes run function uvm:raycast_mined
-

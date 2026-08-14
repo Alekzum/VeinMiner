@@ -66,6 +66,22 @@ With `/function uvm:add_*` commands there is `/function uvm:remove_*` ones:
 /function uvm:remove_custom_tool {namespace:"cool_mod", id:"cool_pickaxe"}
 ```
 
+## Development
+
+### Prepare
+
+somehow install `uv` - [uv installation](https://github.com/astral-sh/uv#installation)
+
+### Setup
+
+install some linters (kinda) with `uv tool install beet --with mecha --force`
+
+### Build
+
+build datapack with `beet build` - datapack will be at `./build/` directory
+
+---
+
 I'll write examples... someday... and insert images and gif... ~~i swear~~
 
 It's literally a fork of quillphen's ["Vein Miner & Preview"](https://modrinth.com/datapack/the-vein-miner)
