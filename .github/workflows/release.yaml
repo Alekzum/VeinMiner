@@ -46,7 +46,7 @@ jobs:
           tag: ${{ inputs.tag_name || github.ref_name }}
           name: "Release ${{ inputs.tag_name || github.ref_name }}"
           generateReleaseNotes: true
-          artifacts: "dist/*"
+          artifacts: "./build/vein-miner.zip"
           artifactContentType: "application/zip"
           artifactErrorsFailBuild: true
           makeLatest: true
