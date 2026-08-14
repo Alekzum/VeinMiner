@@ -1,11 +1,9 @@
-execute store result score pickaxe_enabled uvm.config run data get storage uvm:data category.pickaxe
-execute if score pickaxe_enabled uvm.config matches 1 run function uvm:check_tool {category:"pickaxe"}
+# tempTools.current: {category: string, mining_mode: string}
+# execute if score @s uvm.notified matches 0 if score debug uvm.config matches 1 run tellraw @a [{"text":"[check_tools_loop] ", "color":"gray"}, "calling..."]
+data modify storage uvm:data tempTools.current set from storage uvm:data tempTools.list[-1]
+data remove storage uvm:data tempTools.list[-1]
 
-execute store result score axe_enabled uvm.config run data get storage uvm:data category.axe
-execute if score axe_enabled uvm.config matches 1 run function uvm:check_axe
+function uvm:check_tool with storage uvm:data tempTools.current
 
-execute store result score shovel_enabled uvm.config run data get storage uvm:data category.shovel
-execute if score shovel_enabled uvm.config matches 1 run function uvm:check_shovel
-
-execute store result score hoe_enabled uvm.config run data get storage uvm:data category.hoe
-execute if score hoe_enabled uvm.config matches 1 run function uvm:check_hoe
+execute store result score toolListLength uvm.temp run data get storage uvm:data tempTools.list
+execute if score toolListLength uvm.temp matches 1.. run function uvm:check_tools_loop

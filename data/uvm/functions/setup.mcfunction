@@ -1,7 +1,5 @@
 scoreboard objectives add uvm.config dummy
 scoreboard objectives add uvm.cooldown dummy
-scoreboard objectives add uvm.silk dummy
-scoreboard objectives add uvm.enchant dummy
 scoreboard objectives add uvm.temp dummy
 scoreboard objectives add uvm.preview dummy
 scoreboard objectives add uvm.notified dummy

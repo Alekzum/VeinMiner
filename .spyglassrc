@@ -1,5 +1,0 @@
-{
-    "snippet": {
-        "loop": "# temp0: {list: array{namespace: string, id: string}, current: {namespace: string, id: string}, type: string, mining_mode: string}\ndata modify storage uvm:data temp0.current set from storage uvm:data temp0.list[-1]\ndata remove storage uvm:data temp0.list[-1]\n\nfunction uvm:check_block with storage uvm:data temp0.current\n\nexecute store result score ${2:score_holder} ${1:objective} run data get storage uvm:data temp0.list\nexecute if score remaining_blocks uvm.config matches 1.. run function uvm:check_loop"
-    }
-}
