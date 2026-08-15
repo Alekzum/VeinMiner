@@ -4,6 +4,10 @@ execute unless score @s uvm.preview matches 7.. run return 0
 
 scoreboard players set @s uvm.preview 0
 
-execute as @e[type=block_display,tag=uvm_preview] run kill @s
+execute if score @s uvm.notified matches 0 if score debug uvm.config matches 1 run tellraw @s ""
+data modify storage uvm:data tempPreview0CurrentItem set from entity @s SelectedItem
+# execute if score debug uvm.config matches 1 run tellraw @s [{"text":"[check_player] ", "color":"gray"}, "SelectedItem: ", {"nbt": "tempPreview0CurrentItem", "storage": "uvm:data"}]
+
+execute as @e[distance=0..,tag=uvm_preview,type=block_display] run kill @s
 
 function uvm:preview/check_raycast

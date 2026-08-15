@@ -1,8 +1,8 @@
 scoreboard objectives add uvm.config dummy
 scoreboard objectives add uvm.cooldown dummy
 scoreboard objectives add uvm.silk dummy
-scoreboard objectives add uvm.enchant dummy
 scoreboard objectives add uvm.temp dummy
+scoreboard objectives add uvm.notified dummy
 scoreboard objectives add uvm.preview dummy
 
 data modify storage uvm:data category set value {pickaxe: 1b, axe: 1b, shovel: 1b, hoe: 1b}
