@@ -5,11 +5,6 @@ on:
     tags:
       - 'v*'
   workflow_dispatch:
-    inputs:
-      tag_name:
-        description: 'Version tag for manual release (e.g., v1.0.0-1.14.3)'
-        required: true
-        type: string
 
 jobs:
   lint:
@@ -23,30 +18,55 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Determine Minecraft Version
+        id: mc_version
+        shell: bash
+        run: |
+          BRANCH_NAME=$(git branch -r --contains ${{ github.ref_name }} | grep -E 'origin/(mc/|main-)' | head -n 1 | sed 's|[[:space:]]*origin/||')
+          
+          if [ -z "$BRANCH_NAME" ]; then
+            BRANCH_NAME="${{ github.ref_name }}"
+          fi
+          
+          MC_VER=$(echo "$BRANCH_NAME" | sed -E 's|(mc/|main-)||')
+          
+          if [ -z "$MC_VER" ]; then
+            MC_VER="unknown"
+          fi
+          
+          echo "version=${MC_VER}" >> $GITHUB_OUTPUT
+          echo "Archive name will contain Minecraft version: ${MC_VER}"
 
       - name: Update pack.mcmeta version
         env:
-          RELEASE_VERSION: ${{ inputs.tag_name || github.ref_name }}
+          RELEASE_VERSION: "${{ github.ref_name }}"
         run: |
           if [ -f "./pack.mcmeta" ]; then
             jq --arg ver "\n\u00A77Version $RELEASE_VERSION" '.pack.description |= . + $ver' ./pack.mcmeta > ./pack.mcmeta.tmp && mv ./pack.mcmeta.tmp ./pack.mcmeta
           fi
 
-      - name: Get build
-        run: (curl -LsSf https://astral.sh/uv/install.sh | sh) && 
-          uv tool install beet --with mecha && beet build && 
-          cd ./build/veinminer_data_pack/ &&
-          zip -r ../vein-miner-${{inputs.tag_name || github.ref_name}}.zip ./data ./pack.mcmeta ./pack.png
+      - name: Archive files
+        id: archive
+        run: |
+          FILE_NAME="VeinMiner-${{ github.ref_name }}-mc${{ steps.mc_version.outputs.version }}.zip"
+          
+          mkdir -p dist
+          zip -rq "./dist/${FILE_NAME}" ./data/ ./pack.mcmeta ./pack.png
+          
+          echo "filename=${FILE_NAME}" >> $GITHUB_OUTPUT
 
       - name: Create GitHub Release
-        if: startsWith(github.ref, 'refs/tags/v') || inputs.tag_name != ''
+        if: startsWith(github.ref, 'refs/tags/v')
         uses: ncipollo/release-action@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          tag: ${{ inputs.tag_name || github.ref_name }}
-          name: "Release ${{ inputs.tag_name || github.ref_name }}"
+          tag: ${{ github.ref_name }}
+          name: "Release ${{ github.ref_name }} (MC ${{ steps.mc_version.outputs.version }})"
           generateReleaseNotes: true
-          artifacts: "./build/vein-miner-${{inputs.tag_name || github.ref_name}}.zip"
+          artifacts: "./dist/${{ steps.archive.outputs.filename }}"
           artifactContentType: "application/zip"
           artifactErrorsFailBuild: true
           makeLatest: true
