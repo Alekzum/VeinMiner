@@ -15,26 +15,33 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    strategy:
-      fail-fast: false
-      matrix:
-        include:
-          - branch: 'mc/1.14'
-            mc_ver: '1.14'
-          - branch: 'mc/1.20'
-            mc_ver: '1.20'
-          - branch: 'mc/26.2'
-            mc_ver: '26.2'
-
     steps:
-      - name: Checkout branch code
+      - name: Checkout code
         uses: actions/checkout@v4
         with:
-          ref: ${{ matrix.branch }}
+          fetch-depth: 0
 
       - name: Get release version
         id: vars
         run: echo "tag=${GITHUB_REF#refs/*/}" >> $GITHUB_OUTPUT
+
+      - name: Determine Minecraft Version
+        id: mc_version
+        shell: bash
+        run: |
+          BRANCH_NAME=$(git branch -r --contains ${{ steps.vars.outputs.tag }} | grep -E 'origin/mc/' | head -n 1 | sed 's|[[:space:]]*origin/||')
+          
+          if [ -z "$BRANCH_NAME" ]; then
+            BRANCH_NAME="${{ steps.vars.outputs.tag }}"
+          fi
+          
+          MC_VER=$(echo "$BRANCH_NAME" | sed 's|^mc/||')
+          
+          if [ -z "$MC_VER" ]; then
+            MC_VER="unknown"
+          fi
+          
+          echo "version=${MC_VER}" >> $GITHUB_OUTPUT
 
       - name: Update pack.mcmeta version
         env:
@@ -46,8 +53,15 @@ jobs:
 
       - name: Archive files
         run: |
-          FILE_NAME="VeinMiner-${{ steps.vars.outputs.tag }}-mc${{ matrix.mc_ver }}.zip"
-
+          FILE_NAME="VeinMiner-${{ steps.vars.outputs.tag }}"
+          
+          # Smart protection: avoid adding duplicate '-mc' suffix if already present in tag (e.g. v1.4.0-mc26.2)
+          if [[ "${{ steps.vars.outputs.tag }}" != *"-mc"* ]]; then
+            FILE_NAME="${FILE_NAME}-mc${{ steps.mc_version.outputs.version }}"
+          fi
+          
+          FILE_NAME="${FILE_NAME}.zip"
+          
           mkdir -p dist
           zip -rq "./dist/${FILE_NAME}" ./data/ ./pack.mcmeta ./pack.png
 
@@ -56,11 +70,8 @@ jobs:
         uses: ncipollo/release-action@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          tag: ${{ github.ref_name }}
-          name: "Release ${{ github.ref_name }}"
+          tag: ${{ steps.vars.outputs.tag }}
+          name: "Release ${{ steps.vars.outputs.tag }}"
           generateReleaseNotes: true
-          allowUpdates: true
           artifacts: "./dist/*.zip"
           artifactContentType: "application/zip"
-          artifactErrorsFailBuild: true
-          makeLatest: true
