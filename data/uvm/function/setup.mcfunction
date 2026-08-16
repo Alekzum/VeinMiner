@@ -17,4 +17,4 @@ execute unless score max_vein_size uvm.config matches 0.. run scoreboard players
 
 scoreboard players set initialized uvm.config 1
 
-tellraw @a ["", {"text": "[UVM] ", "color": "gold"}, {"text": "Universal Vein Miner loaded successfully!", "color": "green"}]
+tellraw @a ["", {text: "[UVM] ", color: "gold"}, {text: "Universal Vein Miner loaded successfully!", color: "green"}]

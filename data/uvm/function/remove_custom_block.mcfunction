@@ -11,5 +11,5 @@ execute if score r4 uvm.temp matches 1 run scoreboard players set removed uvm.te
 
 $scoreboard objectives remove uvm.b.$(namespace).$(id)
 
-$execute if score removed uvm.temp matches 1 run tellraw @a ["", {"text": "[UVM] ", "color": "gold"}, {"text": "Removed $(namespace):$(id) from vein mining!", "color": "green"}]
-execute if score removed uvm.temp matches 0 run tellraw @a ["", {"text": "[UVM] ", "color": "gold"}, {"text": "Block not found in custom blocks list.", "color": "red"}]
+$execute if score removed uvm.temp matches 1 run tellraw @a ["", {text: "[UVM] ", color: "gold"}, {text: "Removed $(namespace):$(id) from vein mining!", color: "green"}]
+execute if score removed uvm.temp matches 0 run tellraw @a ["", {text: "[UVM] ", color: "gold"}, {text: "Block not found in custom blocks list.", color: "red"}]

@@ -14,4 +14,5 @@ execute if block ~1 ~ ~ #air run function uvm:preview/scan_ore_x_pos
 execute if block ~ ~ ~-1 #air run function uvm:preview/scan_ore_z_neg
 execute if block ~ ~ ~1 #air run function uvm:preview/scan_ore_z_pos
 
+execute if score preview_count uvm.preview >= max_vein_size uvm.config run return 2
 return 1

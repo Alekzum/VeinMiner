@@ -10,7 +10,6 @@ execute if data storage uvm:data custom_tools run data modify storage uvm:data t
 data modify storage uvm:data tempPreview1.hoe set from storage uvm:data tools.hoe
 execute if data storage uvm:data custom_tools run data modify storage uvm:data tempPreview1.hoe append from storage uvm:data custom_tools.hoe[]
 
-# execute if score debug uvm.config matches 1 run tellraw @s ["\u00a76[UVM Debug][check_block_type]\u00a7r tools: ", {"storage":"uvm:data","nbt":"tools"}," | custom: ", {"storage":"uvm:data", "nbt":"custom_tools", "interpret": false}]
 data modify storage uvm:data tempPreview2.list set from storage uvm:data tempPreview1.pickaxe
 data modify storage uvm:data tempPreview2.category set value "pickaxe"
 data modify storage uvm:data tempPreview2.mode set value "ore"
