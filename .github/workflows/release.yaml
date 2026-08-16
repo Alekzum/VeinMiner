@@ -32,9 +32,13 @@ jobs:
         with:
           ref: ${{ matrix.branch }}
 
+      - name: Get release version
+        id: vars
+        run: echo "tag=${GITHUB_REF#refs/*/}" >> $GITHUB_OUTPUT
+
       - name: Update pack.mcmeta version
         env:
-          RELEASE_VERSION: "${{ github.ref_name }}"
+          RELEASE_VERSION: "${{ steps.vars.outputs.tag }}"
         run: |
           if [ -f "./pack.mcmeta" ]; then
             jq --arg ver "\n\u00A77Version $RELEASE_VERSION" '.pack.description |= . + $ver' ./pack.mcmeta > ./pack.mcmeta.tmp && mv ./pack.mcmeta.tmp ./pack.mcmeta
@@ -42,8 +46,8 @@ jobs:
 
       - name: Archive files
         run: |
-          FILE_NAME="VeinMiner-${{ github.ref_name }}-mc${{ matrix.mc_ver }}.zip"
-          
+          FILE_NAME="VeinMiner-${{ steps.vars.outputs.tag }}-mc${{ matrix.mc_ver }}.zip"
+
           mkdir -p dist
           zip -rq "./dist/${FILE_NAME}" ./data/ ./pack.mcmeta ./pack.png
 
