@@ -1,4 +1,4 @@
-execute if score debug uvm.config matches 1 run tellraw @a [{"text":"[generate_random_motion] ", "color":"gray"}, "generating motion"]
+execute if score @s uvm.debug matches 1 run tellraw @a [{"text":"[generate_random_motion] ", "color":"gray"}, "generating motion"]
 
 tp @s ~ ~ ~
 data modify storage uvm:data tempMotion set value []
@@ -10,4 +10,4 @@ data modify storage uvm:data tempMotion append from storage uvm:data tempMotionY
 data modify storage uvm:data tempMotion append from storage uvm:data tempMotionZ
 data modify entity @s Motion set from storage uvm:data tempMotion
 
-execute if score debug uvm.config matches 1 run tellraw @a [{"text":"[generate_random_motion] ", "color":"gray"}, "generated motion: ", {"nbt": "tempMotion", "storage": "uvm:data"}]
+execute if score @s uvm.debug matches 1 run tellraw @a [{"text":"[generate_random_motion] ", "color":"gray"}, "generated motion: ", {"nbt": "tempMotion", "storage": "uvm:data"}]

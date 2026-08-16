@@ -7,7 +7,7 @@ $scoreboard players reset @s uvm.b.$(namespace).$(id)
 execute if score sneak_mode uvm.config matches 1 unless predicate uvm:is_sneaking run return fail
 execute if entity @s[scores={uvm.cooldown=1..}] run return fail
 
-execute if score @s uvm.notified matches 0 if score debug uvm.config matches 1 run tellraw @a [{"text":"[start_mining] ", "color":"gray"}, {"nbt": "temp1","storage": "uvm:data"}]
+execute if score @s uvm.notified matches 0 if score @s uvm.debug matches 1 run tellraw @a [{"text":"[start_mining] ", "color":"gray"}, {"nbt": "temp1","storage": "uvm:data"}]
 data modify storage uvm:data temp1.current set from storage uvm:data temp0.current
 data modify storage uvm:data temp1.mining_mode set from storage uvm:data temp0.mining_mode
 

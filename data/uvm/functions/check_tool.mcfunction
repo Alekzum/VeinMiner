@@ -1,4 +1,4 @@
-# execute if score debug uvm.config matches 1 run tellraw @a [{"text":"[check_tool] ", "color":"gray"}, "called with ", {"nbt":"tempTools.current", "storage": "uvm:data"}]
+# execute if score @s uvm.debug matches 1 run tellraw @a [{"text":"[check_tool] ", "color":"gray"}, "called with ", {"nbt":"tempTools.current", "storage": "uvm:data"}]
 
 $execute store result score $(category)_enabled uvm.config run data get storage uvm:data category.$(category)
 $execute if score $(category)_enabled uvm.config matches 0 run return 2

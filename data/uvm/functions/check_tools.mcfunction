@@ -1,11 +1,11 @@
-# execute if score debug uvm.config matches 1 run tellraw @a [{"text":"[check_tools] ", "color":"gray"}, "making list"]
+# execute if score @s uvm.debug matches 1 run tellraw @a [{"text":"[check_tools] ", "color":"gray"}, "making list"]
 
 # tempTools.current: {category: string, mining_mode: string}
 
 # data modify storage uvm:data tempTools.list set value []
 data modify storage uvm:data tempTools.list set value [{"category": "pickaxe", "mining_mode": "ore"},{"category": "axe", "mining_mode": "tree"},{"category": "shovel", "mining_mode": "ore"},{"category": "hoe", "mining_mode": "ore"}]
 
-# execute if score debug uvm.config matches 1 run tellraw @a [{"text":"[check_tools] ", "color":"gray"}, "calling check_tools_loop"]
+# execute if score @s uvm.debug matches 1 run tellraw @a [{"text":"[check_tools] ", "color":"gray"}, "calling check_tools_loop"]
 function uvm:check_tools_loop
 
 # execute store result score pickaxe_enabled uvm.config run data get storage uvm:data category.pickaxe

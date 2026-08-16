@@ -1,4 +1,4 @@
-execute if score @s uvm.notified matches 0 if score debug uvm.config matches 1 run tellraw @a [{"text":"[route_mining] ", "color":"gray"}, "route mining to ", {"nbt": "temp1.mining_mode", "storage": "uvm:data"}]
+execute if score @s uvm.notified matches 0 if score @s uvm.debug matches 1 run tellraw @a [{"text":"[route_mining] ", "color":"gray"}, "route mining to ", {"nbt": "temp1.mining_mode", "storage": "uvm:data"}]
 
 function uvm:preview/clear_markers
 
