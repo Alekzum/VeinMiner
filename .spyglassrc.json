@@ -1,8 +1,6 @@
 {
     "env": {
         "gameVersion": "1.14",
-        "language": "Default",
         "permissionLevel": 2
-    },
-    "snippet": {}
+    }
 }

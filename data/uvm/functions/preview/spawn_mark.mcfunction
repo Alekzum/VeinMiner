@@ -1,0 +1,2 @@
+execute if score @s uvm.spawn_mark < @s uvm.max_marks run summon snowball ~ ~ ~ {Glowing:1b, NoGravity:1b, Tags:[ore_mark]}
+execute unless score @s uvm.spawn_mark < @s uvm.max_marks if score @s uvm.trigger matches 1 if score @s uvm.trace matches 1 run tellraw @s [{"text":"[uvm:trace] [", "color":"gray", "extra":[{"text":"spawn_mark", "color":"gold"}, "]"]}, {"text":"cant spawn more than ", "extra":[{"score":{"name":"@s", "objective": "uvm.max_marks"}}, " marks!"], "color":"red"}]
