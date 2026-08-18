@@ -16,5 +16,8 @@ scoreboard objectives add uvm.m.acacia minecraft.mined:minecraft.acacia_log
 scoreboard objectives add uvm.m.dark_oak minecraft.mined:minecraft.dark_oak_log
 
 scoreboard players set sneak_mode uvm.config 1
+scoreboard players set max_look_t uvm.config 7
+scoreboard players set max_marks uvm.config 128
 scoreboard players set system_disabled uvm.config 0
+scoreboard players set default_cooldown uvm.cooldown 10
 scoreboard players set default_cooldown uvm.cooldown 10

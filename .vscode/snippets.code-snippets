@@ -18,17 +18,17 @@
 	"Log to player if notified": {
 		"scope": "mcfunction",
 		"prefix": "log-if-notified",
-		"body": "execute if score @s uvm.notified matches 0 if score @s uvm.trigger matches 1 if score @s uvm.debug matches 1 run tellraw @a [{\"text\":\"[\", \"color\":\"gray\", \"extra\":[{\"text\":\"uvm:${1:filename}\", \"color\":\"gold\"}, \"]\"]}, \"${2:message}\"]"
+		"body": "execute if score @s uvm.notified matches 0 if score @s uvm.trigger_view matches 1 if score @s uvm.debug matches 1 run tellraw @a [{\"text\":\"[\", \"color\":\"gray\", \"extra\":[{\"text\":\"uvm:${1:filename}\", \"color\":\"gold\"}, \"]\"]}, \"${2:message}\"]"
 	},
 	"Log to player": {
 		"scope": "mcfunction",
 		"prefix": "log",
-		"body": "execute if score @s uvm.trigger matches 1 if score @s uvm.debug matches 1 run tellraw @a [{\"text\":\"[\", \"color\":\"gray\", \"extra\":[{\"text\":\"uvm:${1:filename}\", \"color\":\"gold\"}, \"]\"]}, \"${2:message}\"]"
+		"body": "execute if score @s uvm.trigger_view matches 1 if score @s uvm.debug matches 1 run tellraw @a [{\"text\":\"[\", \"color\":\"gray\", \"extra\":[{\"text\":\"uvm:${1:filename}\", \"color\":\"gold\"}, \"]\"]}, \"${2:message}\"]"
 	},
 	"Trace to player": {
 		"scope": "mcfunction",
 		"prefix": "trace",
-		"body": "execute if score @s uvm.trigger matches 1 if score @s uvm.trace matches 1 run tellraw @s [{\"text\":\"[trace] [\", \"color\":\"gray\", \"extra\":[{\"text\":\"uvm:${1:filename}\", \"color\":\"gold\"}, \"] \"]}, \"${2:pong}\"]"
+		"body": "execute if score @s uvm.trigger_view matches 1 if score @s uvm.trace matches 1 run tellraw @s [{\"text\":\"[trace] [\", \"color\":\"gray\", \"extra\":[{\"text\":\"uvm:${1:filename}\", \"color\":\"gold\"}, \"] \"]}, \"${2:pong}\"]"
 	}
 	// Place your VeinMiner1.20.5+ workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
 	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 

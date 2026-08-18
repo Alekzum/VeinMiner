@@ -1,9 +1,9 @@
-execute if score @s uvm.trigger matches 1 if score @s uvm.trace matches 1 run tellraw @s [{"text":"[trace] [", "color":"gray", "extra":[{"text":"uvm:raycast", "color":"gold"}, "] "]}, "pong"]
-execute if score @s uvm.raycast_dist matches 60.. run scoreboard players set @s uvm.r_raycast 0
+# summon minecraft:snowball ~ ~ ~ {Tags:[ore_mark], NoGravity:1b, Glowing:1b}
+# execute if score @s uvm.trigger_view matches 1 if score @s uvm.trace matches 1 run tellraw @s [{"text":"[trace] [", "color":"gray", "extra":[{"text":"uvm:raycast", "color":"gold"}, "] "]}, "distance:", {"score": {"name": "@s", "objective": "uvm.raycast_dist"}}]
+execute if score @s uvm.raycast_dist matches 60.. run scoreboard players set @s uvm.raycast_r 0
 
-execute if score @s uvm.r_raycast matches -1 unless block ~ ~ ~ #uvm:ore run function uvm:preview/mark_thing
-execute if score @s uvm.r_raycast matches -1 unless block ~ ~ ~ #uvm:ore if score @s uvm.trigger matches 1 if score @s uvm.debug matches 1 run tellraw @a [{"text":"[", "color":"gray", "extra":[{"text":"uvm:raycast", "color":"gold"}, "]"]}, "hit!"]
-execute if score @s uvm.r_raycast matches -1 unless block ~ ~ ~ #uvm:ore run scoreboard players set @s uvm.r_raycast 1
+function uvm:check_sneak
+execute if score @s uvm.trigger_view matches 1 if score @s uvm.raycast_r matches -1 if block ~ ~ ~ #uvm:ore align xyz positioned ~0.5 ~0.5 ~0.5 run function uvm:preview/hit
 
-execute if score @s uvm.r_raycast matches -1 run scoreboard players add @s uvm.raycast_dist 1
-execute if score @s uvm.r_raycast matches -1 positioned ^ ^ ^0.1 run function uvm:preview/raycast
+execute if score @s uvm.raycast_r matches -1 run scoreboard players add @s uvm.raycast_dist 1
+execute if score @s uvm.raycast_r matches -1 anchored feet positioned ^ ^ ^0.1 run function uvm:preview/raycast
