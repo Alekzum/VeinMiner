@@ -1,5 +1,3 @@
-# execute if score @s uvm.trigger_view matches 1 if score @s uvm.trace matches 1 run tellraw @s [{"text":"[uvm:", "color":"gray", "extra":[{"text":"check_ores", "color":"gold"}, "]"]}, "ping"]
-
 execute as @a[scores={uvm.m.coal=1..,uvm.sneak_time=1..}] at @s run scoreboard players set @s uvm.is_mined_ore 1
 execute as @a[scores={uvm.m.iron=1..,uvm.sneak_time=1..}] at @s run scoreboard players set @s uvm.is_mined_ore 1
 execute as @a[scores={uvm.m.gold=1..,uvm.sneak_time=1..}] at @s run scoreboard players set @s uvm.is_mined_ore 1
