@@ -14,21 +14,21 @@ scoreboard objectives add uvm.raycast_dist dummy
 scoreboard objectives add uvm.n_raycast_r dummy
 scoreboard objectives add uvm.raycast_r dummy
 
-scoreboard players set @a uvm.config 0
-scoreboard players set @a uvm.cooldown 0
-scoreboard players set @a uvm.look_time 0
+execute as @a unless score @s uvm.config matches 0.. run scoreboard players set @s uvm.config 0
+execute as @a unless score @s uvm.cooldown matches 0.. run scoreboard players set @s uvm.cooldown 0
+execute as @a unless score @s uvm.look_time matches 0.. run scoreboard players set @s uvm.look_time 0
 
-scoreboard players set @a uvm.is_mined_ore 0
-scoreboard players set @a uvm.old_sneak 0
-scoreboard players set @a uvm.trigger_view 0
+execute as @a unless score @s uvm.is_mined_ore matches 0.. run scoreboard players set @s uvm.is_mined_ore 0
+execute as @a unless score @s uvm.old_sneak matches 0.. run scoreboard players set @s uvm.old_sneak 0
+execute as @a unless score @s uvm.trigger_view matches 0.. run scoreboard players set @s uvm.trigger_view 0
 
-scoreboard players set @a uvm.trace 0
-scoreboard players set @a uvm.debug 0
+execute as @a unless score @s uvm.trace matches 0.. run scoreboard players set @s uvm.trace 0
+execute as @a unless score @s uvm.debug matches 0.. run scoreboard players set @s uvm.debug 0
 
-scoreboard players set @a uvm.spawn_mark 0
-scoreboard players set @a uvm.raycast_dist 0
-scoreboard players set @a uvm.n_raycast_r 0
-scoreboard players set @a uvm.raycast_r 0
+execute as @a unless score @s uvm.spawn_mark matches 0.. run scoreboard players set @s uvm.spawn_mark 0
+execute as @a unless score @s uvm.raycast_dist matches 0.. run scoreboard players set @s uvm.raycast_dist 0
+execute as @a unless score @s uvm.n_raycast_r matches 0.. run scoreboard players set @s uvm.n_raycast_r 0
+execute as @a unless score @s uvm.raycast_r matches 0.. run scoreboard players set @s uvm.raycast_r 0
 
 scoreboard objectives add uvm.sneak_time minecraft.custom:minecraft.sneak_time
 
