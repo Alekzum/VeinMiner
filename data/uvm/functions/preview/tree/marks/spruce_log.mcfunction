@@ -6,7 +6,7 @@ execute positioned ~1 ~ ~ if block ~ ~ ~ minecraft:spruce_leaves unless entity @
 execute positioned ~-1 ~ ~ if block ~ ~ ~ minecraft:spruce_leaves unless entity @e[tag=ore_mark,distance=..0.3] run function uvm:preview/tree/marks/spruce_leaves
 execute positioned ~ ~1 ~ if block ~ ~ ~ minecraft:spruce_leaves unless entity @e[tag=ore_mark,distance=..0.3] run function uvm:preview/tree/marks/spruce_leaves
 execute positioned ~ ~-1 ~ if block ~ ~ ~ minecraft:spruce_leaves unless entity @e[tag=ore_mark,distance=..0.3] run function uvm:preview/tree/marks/spruce_leaves
-# function uvm:log/vein/spruce_log
+# function uvm:log/break/spruce_log
 execute positioned ~ ~ ~1 if block ~ ~ ~ minecraft:spruce_log unless entity @e[tag=ore_mark,distance=..0.3] run function uvm:preview/tree/marks/spruce_log
 execute positioned ~ ~ ~-1 if block ~ ~ ~ minecraft:spruce_log unless entity @e[tag=ore_mark,distance=..0.3] run function uvm:preview/tree/marks/spruce_log
 execute positioned ~1 ~ ~ if block ~ ~ ~ minecraft:spruce_log unless entity @e[tag=ore_mark,distance=..0.3] run function uvm:preview/tree/marks/spruce_log

@@ -1,8 +1,24 @@
-setblock ~ ~ ~ air destroy
+function uvm:preview/try_spawn_mark
+
 execute positioned ~ ~ ~1 if block ~ ~ ~ minecraft:spruce_leaves run function uvm:log/break/spruce_leaves
 execute positioned ~ ~ ~-1 if block ~ ~ ~ minecraft:spruce_leaves run function uvm:log/break/spruce_leaves
 execute positioned ~1 ~ ~ if block ~ ~ ~ minecraft:spruce_leaves run function uvm:log/break/spruce_leaves
 execute positioned ~-1 ~ ~ if block ~ ~ ~ minecraft:spruce_leaves run function uvm:log/break/spruce_leaves
 execute positioned ~ ~1 ~ if block ~ ~ ~ minecraft:spruce_leaves run function uvm:log/break/spruce_leaves
 execute positioned ~ ~-1 ~ if block ~ ~ ~ minecraft:spruce_leaves run function uvm:log/break/spruce_leaves
-function uvm:log/vein/spruce_log
+# function uvm:log/break/spruce_log
+execute positioned ~ ~ ~1 if block ~ ~ ~ minecraft:spruce_log run function uvm:log/break/spruce_log
+execute positioned ~ ~ ~-1 if block ~ ~ ~ minecraft:spruce_log run function uvm:log/break/spruce_log
+execute positioned ~1 ~ ~ if block ~ ~ ~ minecraft:spruce_log run function uvm:log/break/spruce_log
+execute positioned ~-1 ~ ~ if block ~ ~ ~ minecraft:spruce_log run function uvm:log/break/spruce_log
+execute positioned ~ ~1 ~ if block ~ ~ ~ minecraft:spruce_log run function uvm:log/break/spruce_log
+execute positioned ~ ~-1 ~ if block ~ ~ ~ minecraft:spruce_log run function uvm:log/break/spruce_log
+execute positioned ~1 ~1 ~ if block ~ ~ ~ minecraft:spruce_log run function uvm:log/break/spruce_log
+execute positioned ~-1 ~1 ~ if block ~ ~ ~ minecraft:spruce_log run function uvm:log/break/spruce_log
+execute positioned ~ ~1 ~1 if block ~ ~ ~ minecraft:spruce_log run function uvm:log/break/spruce_log
+execute positioned ~ ~1 ~-1 if block ~ ~ ~ minecraft:spruce_log run function uvm:log/break/spruce_log
+execute positioned ~1 ~1 ~1 if block ~ ~ ~ minecraft:spruce_log run function uvm:log/break/spruce_log
+execute positioned ~1 ~1 ~-1 if block ~ ~ ~ minecraft:spruce_log run function uvm:log/break/spruce_log
+execute positioned ~-1 ~1 ~1 if block ~ ~ ~ minecraft:spruce_log run function uvm:log/break/spruce_log
+execute positioned ~-1 ~1 ~-1 if block ~ ~ ~ minecraft:spruce_log run function uvm:log/break/spruce_log
+
