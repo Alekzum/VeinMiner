@@ -1,4 +1,4 @@
-execute positioned ~ ~ ~ run function uvm:ore/mine
+execute positioned ~ ~ ~ run function uvm:mine
 
 execute positioned ~ ~ ~1 if block ~ ~ ~ #uvm:ore run function uvm:ore/break_ore_universal
 execute positioned ~ ~ ~-1 if block ~ ~ ~ #uvm:ore run function uvm:ore/break_ore_universal

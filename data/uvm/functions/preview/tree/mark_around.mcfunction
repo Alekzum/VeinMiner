@@ -1,0 +1,26 @@
+execute positioned ~ ~ ~ if block ~ ~ ~ minecraft:acacia_log unless entity @e[tag=ore_mark,distance=..0.3] run function uvm:preview/tree/marks/acacia_log
+execute positioned ~ ~ ~ if block ~ ~ ~ minecraft:birch_log unless entity @e[tag=ore_mark,distance=..0.3] run function uvm:preview/tree/marks/birch_log
+execute positioned ~ ~ ~ if block ~ ~ ~ minecraft:dark_oak_log unless entity @e[tag=ore_mark,distance=..0.3] run function uvm:preview/tree/marks/dark_oak_log
+execute positioned ~ ~ ~ if block ~ ~ ~ minecraft:jungle_log unless entity @e[tag=ore_mark,distance=..0.3] run function uvm:preview/tree/marks/jungle_log
+execute positioned ~ ~ ~ if block ~ ~ ~ minecraft:oak_log unless entity @e[tag=ore_mark,distance=..0.3] run function uvm:preview/tree/marks/oak_log
+execute positioned ~ ~ ~ if block ~ ~ ~ minecraft:spruce_log unless entity @e[tag=ore_mark,distance=..0.3] run function uvm:preview/tree/marks/spruce_log
+execute positioned ~ ~ ~ if block ~ ~ ~ minecraft:acacia_leaves unless entity @e[tag=ore_mark,distance=..0.3] run function uvm:preview/tree/marks/acacia_leaves
+execute positioned ~ ~ ~ if block ~ ~ ~ minecraft:birch_leaves unless entity @e[tag=ore_mark,distance=..0.3] run function uvm:preview/tree/marks/birch_leaves
+execute positioned ~ ~ ~ if block ~ ~ ~ minecraft:dark_oak_leaves unless entity @e[tag=ore_mark,distance=..0.3] run function uvm:preview/tree/marks/dark_oak_leaves
+execute positioned ~ ~ ~ if block ~ ~ ~ minecraft:jungle_leaves unless entity @e[tag=ore_mark,distance=..0.3] run function uvm:preview/tree/marks/jungle_leaves
+execute positioned ~ ~ ~ if block ~ ~ ~ minecraft:oak_leaves unless entity @e[tag=ore_mark,distance=..0.3] run function uvm:preview/tree/marks/oak_leaves
+execute positioned ~ ~ ~ if block ~ ~ ~ minecraft:spruce_leaves unless entity @e[tag=ore_mark,distance=..0.3] run function uvm:preview/tree/marks/spruce_leaves
+
+# execute if block ~ ~ ~1 #uvm:log positioned ~ ~ ~1 unless entity @e[tag=ore_mark,distance=..0.3] run function uvm:preview/tree/mark_around
+# execute if block ~ ~ ~-1 #uvm:log positioned ~ ~ ~-1 unless entity @e[tag=ore_mark,distance=..0.3] run function uvm:preview/tree/mark_around
+# execute if block ~1 ~ ~ #uvm:log positioned ~1 ~ ~ unless entity @e[tag=ore_mark,distance=..0.3] run function uvm:preview/tree/mark_around
+# execute if block ~-1 ~ ~ #uvm:log positioned ~-1 ~ ~ unless entity @e[tag=ore_mark,distance=..0.3] run function uvm:preview/tree/mark_around
+# execute if block ~ ~1 ~ #uvm:log positioned ~ ~1 ~ unless entity @e[tag=ore_mark,distance=..0.3] run function uvm:preview/tree/mark_around
+# execute if block ~ ~-1 ~ #uvm:log positioned ~ ~-1 ~ unless entity @e[tag=ore_mark,distance=..0.3] run function uvm:preview/tree/mark_around
+
+# execute if block ~ ~ ~1 #uvm:log positioned ~ ~ ~1 unless entity @e[tag=ore_mark,distance=..0.3] run function uvm:preview/tree/mark_around
+# execute if block ~ ~ ~-1 #uvm:log positioned ~ ~ ~-1 unless entity @e[tag=ore_mark,distance=..0.3] run function uvm:preview/tree/mark_around
+# execute if block ~1 ~ ~ #uvm:log positioned ~1 ~ ~ unless entity @e[tag=ore_mark,distance=..0.3] run function uvm:preview/tree/mark_around
+# execute if block ~-1 ~ ~ #uvm:log positioned ~-1 ~ ~ unless entity @e[tag=ore_mark,distance=..0.3] run function uvm:preview/tree/mark_around
+# execute if block ~ ~1 ~ #uvm:log positioned ~ ~1 ~ unless entity @e[tag=ore_mark,distance=..0.3] run function uvm:preview/tree/mark_around
+# execute if block ~ ~-1 ~ #uvm:log positioned ~ ~-1 ~ unless entity @e[tag=ore_mark,distance=..0.3] run function uvm:preview/tree/mark_around
