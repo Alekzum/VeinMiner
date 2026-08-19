@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "#uvm:log",
+    "#uvm:leaf"
+  ]
+}
