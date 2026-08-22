@@ -1,9 +1,9 @@
-execute positioned ~ ~ ~ unless entity @e[tag=ore_mark,distance=..0.3] run function uvm:preview/try_spawn_mark
-# function uvm:log/break/dark_oak_leaves
-execute positioned ~ ~ ~1 if block ~ ~ ~ minecraft:dark_oak_leaves run function uvm:preview/tree/marks/dark_oak_leaves
-execute positioned ~ ~ ~-1 if block ~ ~ ~ minecraft:dark_oak_leaves run function uvm:preview/tree/marks/dark_oak_leaves
-execute positioned ~1 ~ ~ if block ~ ~ ~ minecraft:dark_oak_leaves run function uvm:preview/tree/marks/dark_oak_leaves
-execute positioned ~-1 ~ ~ if block ~ ~ ~ minecraft:dark_oak_leaves run function uvm:preview/tree/marks/dark_oak_leaves
-execute positioned ~ ~1 ~ if block ~ ~ ~ minecraft:dark_oak_leaves run function uvm:preview/tree/marks/dark_oak_leaves
-execute positioned ~ ~-1 ~ if block ~ ~ ~ minecraft:dark_oak_leaves run function uvm:preview/tree/marks/dark_oak_leaves
+execute positioned ~ ~ ~ unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/try_spawn_mark
+
+execute positioned ~ ~ ~1 if block ~ ~ ~ dark_oak_leaves unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/dark_oak_leaves
+execute positioned ~ ~ ~-1 if block ~ ~ ~ dark_oak_leaves unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/dark_oak_leaves
+execute positioned ~1 ~ ~ if block ~ ~ ~ dark_oak_leaves unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/dark_oak_leaves
+execute positioned ~-1 ~ ~ if block ~ ~ ~ dark_oak_leaves unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/dark_oak_leaves
+execute positioned ~ ~1 ~ if block ~ ~ ~ dark_oak_leaves unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/dark_oak_leaves
+execute positioned ~ ~-1 ~ if block ~ ~ ~ dark_oak_leaves unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/dark_oak_leaves
 
