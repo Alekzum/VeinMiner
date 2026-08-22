@@ -1,1 +1,1 @@
-function uvm:config/_call_menu
+function uvm:configuration/_call_menu

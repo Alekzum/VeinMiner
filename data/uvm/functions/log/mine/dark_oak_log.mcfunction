@@ -1,6 +1,0 @@
-scoreboard players reset @s uvm.m.dark_oak
-
-# function uvm:log/find/dark_oak_log
-execute anchored eyes positioned ^ ^ ^1.5 at @e[limit=1,sort=nearest,nbt={Age:0s},distance=..5.0,type=item] positioned ~ ~ ~ align xyz positioned ~0.5 ~0.5 ~0.5 run function uvm:log/break/dark_oak_log
-
-scoreboard players set @s uvm.cooldown 10
