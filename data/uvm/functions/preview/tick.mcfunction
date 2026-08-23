@@ -1,3 +1,4 @@
+function uvm:filter/set_invoke_datapack
 function uvm:preview/remove_mark
 scoreboard players set @s uvm.raycast_r -1
 scoreboard players set @s uvm.raycast_dist 0

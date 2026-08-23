@@ -50,14 +50,14 @@ Write-Host "  templates"
 Write-Host "    global"
 $templates = @{
     preview        = @{
-        execute       = "execute positioned ~ ~ ~ unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/try_spawn_mark";
-        tree_function = "unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks"
-        ore_function  = "unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks"
+        execute       = "execute positioned ~ ~ ~ unless entity @e[tag=ore_mark,distance=..0.1,type=snowball] run function uvm:preview/try_spawn_mark";
+        tree_function = "if score @s uvm.is_invoke matches 1 unless entity @e[tag=ore_mark,distance=..0.1,type=snowball] run function uvm:preview/tree/marks"
+        ore_function  = "if score @s uvm.is_invoke matches 1 unless entity @e[tag=ore_mark,distance=..0.1,type=snowball] run function uvm:preview/ore/marks"
     };
     mine           = @{
         execute       = "function uvm:internal/mine";
-        tree_function = "run function uvm:mine/tree/break"
-        ore_function  = "run function uvm:mine/ore/break"
+        tree_function = "if score @s uvm.is_invoke matches 1 run function uvm:mine/tree/break"
+        ore_function  = "if score @s uvm.is_invoke matches 1 run function uvm:mine/ore/break"
     };
     universal_log  = (get-content -path (Join-Path $templatesPath "universal_log.txt") -raw);
     universal_leaf = (get-content -path (Join-Path $templatesPath "universal_leaf.txt") -raw);

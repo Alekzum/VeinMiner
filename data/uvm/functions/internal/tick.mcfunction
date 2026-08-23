@@ -1,4 +1,3 @@
-function uvm:filter/set_invoke_datapack
 execute as @a run function uvm:preview/tick
 
 execute if score system_disabled uvm.config matches 0 as @a[scores={uvm.is_invoke=1}] run function uvm:internal/check_things
