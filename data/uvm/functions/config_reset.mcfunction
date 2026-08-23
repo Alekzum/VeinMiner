@@ -20,4 +20,4 @@ execute unless score max_look_t uvm.config matches -2147483648..2147483647 run s
 execute unless score max_marks uvm.config matches -2147483648..2147483647 run scoreboard players set max_marks uvm.config 128
 execute unless score tp_items uvm.config matches -2147483648..2147483647 run scoreboard players set tp_items uvm.config 0
 execute unless score system_disabled uvm.config matches -2147483648..2147483647 run scoreboard players set system_disabled uvm.config 0
-execute unless score default_cooldown uvm.cooldown matches -2147483648..2147483647 run scoreboard players set default_cooldown uvm.cooldown 10
+execute unless score default_cooldown uvm.config matches -2147483648..2147483647 run scoreboard players set default_cooldown uvm.config 10

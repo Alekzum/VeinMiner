@@ -1,57 +1,57 @@
-execute positioned ~ ~ ~ run function uvm:internal/mine
+function uvm:internal/mine
 
-execute positioned ~ ~ ~1 if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
-execute positioned ~ ~ ~-1 if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
-execute positioned ~1 ~ ~ if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
-execute positioned ~-1 ~ ~ if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
-execute positioned ~ ~1 ~ if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
-execute positioned ~ ~-1 ~ if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
+execute positioned ~ ~ ~1 if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore
+execute positioned ~ ~ ~-1 if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore
+execute positioned ~1 ~ ~ if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore
+execute positioned ~-1 ~ ~ if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore
+execute positioned ~ ~1 ~ if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore
+execute positioned ~ ~-1 ~ if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore
 
-execute if block ~ ~ ~-1 #uvm:air positioned ~ ~-1 ~-1 if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
-execute if block ~ ~ ~-1 #uvm:air positioned ~ ~1 ~-1 if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
-execute if block ~ ~ ~-1 #uvm:air positioned ~-1 ~ ~-1 if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
-execute if block ~ ~ ~-1 #uvm:air positioned ~1 ~ ~-1 if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
-execute if block ~ ~ ~1 #uvm:air positioned ~ ~-1 ~1 if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
-execute if block ~ ~ ~1 #uvm:air positioned ~ ~1 ~1 if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
-execute if block ~ ~ ~1 #uvm:air positioned ~-1 ~ ~1 if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
-execute if block ~ ~ ~1 #uvm:air positioned ~1 ~ ~1 if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
-execute if block ~ ~-1 ~ #uvm:air positioned ~ ~-1 ~-1 if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
-execute if block ~ ~-1 ~ #uvm:air positioned ~ ~-1 ~1 if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
-execute if block ~ ~-1 ~ #uvm:air positioned ~-1 ~-1 ~ if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
-execute if block ~ ~-1 ~ #uvm:air positioned ~1 ~-1 ~ if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
-execute if block ~ ~1 ~ #uvm:air positioned ~ ~1 ~-1 if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
-execute if block ~ ~1 ~ #uvm:air positioned ~ ~1 ~1 if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
-execute if block ~ ~1 ~ #uvm:air positioned ~-1 ~1 ~ if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
-execute if block ~ ~1 ~ #uvm:air positioned ~1 ~1 ~ if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
-execute if block ~-1 ~ ~ #uvm:air positioned ~-1 ~ ~-1 if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
-execute if block ~-1 ~ ~ #uvm:air positioned ~-1 ~ ~1 if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
-execute if block ~-1 ~ ~ #uvm:air positioned ~-1 ~-1 ~ if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
-execute if block ~-1 ~ ~ #uvm:air positioned ~-1 ~1 ~ if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
-execute if block ~1 ~ ~ #uvm:air positioned ~1 ~ ~-1 if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
-execute if block ~1 ~ ~ #uvm:air positioned ~1 ~ ~1 if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
-execute if block ~1 ~ ~ #uvm:air positioned ~1 ~-1 ~ if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
-execute if block ~1 ~ ~ #uvm:air positioned ~1 ~1 ~ if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
-execute if block ~ ~-1 ~-1 #uvm:air positioned ~-1 ~-1 ~-1 if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
-execute if block ~ ~-1 ~-1 #uvm:air positioned ~1 ~-1 ~-1 if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
-execute if block ~ ~-1 ~1 #uvm:air positioned ~-1 ~-1 ~1 if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
-execute if block ~ ~-1 ~1 #uvm:air positioned ~1 ~-1 ~1 if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
-execute if block ~ ~1 ~-1 #uvm:air positioned ~-1 ~1 ~-1 if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
-execute if block ~ ~1 ~-1 #uvm:air positioned ~1 ~1 ~-1 if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
-execute if block ~ ~1 ~1 #uvm:air positioned ~-1 ~1 ~1 if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
-execute if block ~ ~1 ~1 #uvm:air positioned ~1 ~1 ~1 if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
-execute if block ~-1 ~ ~-1 #uvm:air positioned ~-1 ~-1 ~-1 if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
-execute if block ~-1 ~ ~-1 #uvm:air positioned ~-1 ~1 ~-1 if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
-execute if block ~-1 ~ ~1 #uvm:air positioned ~-1 ~-1 ~1 if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
-execute if block ~-1 ~ ~1 #uvm:air positioned ~-1 ~1 ~1 if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
-execute if block ~-1 ~-1 ~ #uvm:air positioned ~-1 ~-1 ~-1 if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
-execute if block ~-1 ~-1 ~ #uvm:air positioned ~-1 ~-1 ~1 if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
-execute if block ~-1 ~1 ~ #uvm:air positioned ~-1 ~1 ~-1 if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
-execute if block ~-1 ~1 ~ #uvm:air positioned ~-1 ~1 ~1 if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
-execute if block ~1 ~ ~-1 #uvm:air positioned ~1 ~-1 ~-1 if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
-execute if block ~1 ~ ~-1 #uvm:air positioned ~1 ~1 ~-1 if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
-execute if block ~1 ~ ~1 #uvm:air positioned ~1 ~-1 ~1 if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
-execute if block ~1 ~ ~1 #uvm:air positioned ~1 ~1 ~1 if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
-execute if block ~1 ~-1 ~ #uvm:air positioned ~1 ~-1 ~-1 if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
-execute if block ~1 ~-1 ~ #uvm:air positioned ~1 ~-1 ~1 if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
-execute if block ~1 ~1 ~ #uvm:air positioned ~1 ~1 ~-1 if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
-execute if block ~1 ~1 ~ #uvm:air positioned ~1 ~1 ~1 if block ~ ~ ~ minecraft:gold_ore run function uvm:mine/ore/break/gold_ore
+execute if block ~ ~ ~-1 #uvm:air positioned ~ ~-1 ~-1 if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore
+execute if block ~ ~ ~-1 #uvm:air positioned ~ ~1 ~-1 if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore
+execute if block ~ ~ ~-1 #uvm:air positioned ~-1 ~ ~-1 if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore
+execute if block ~ ~ ~-1 #uvm:air positioned ~1 ~ ~-1 if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore
+execute if block ~ ~ ~1 #uvm:air positioned ~ ~-1 ~1 if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore
+execute if block ~ ~ ~1 #uvm:air positioned ~ ~1 ~1 if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore
+execute if block ~ ~ ~1 #uvm:air positioned ~-1 ~ ~1 if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore
+execute if block ~ ~ ~1 #uvm:air positioned ~1 ~ ~1 if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore
+execute if block ~ ~-1 ~ #uvm:air positioned ~ ~-1 ~-1 if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore
+execute if block ~ ~-1 ~ #uvm:air positioned ~ ~-1 ~1 if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore
+execute if block ~ ~-1 ~ #uvm:air positioned ~-1 ~-1 ~ if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore
+execute if block ~ ~-1 ~ #uvm:air positioned ~1 ~-1 ~ if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore
+execute if block ~ ~1 ~ #uvm:air positioned ~ ~1 ~-1 if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore
+execute if block ~ ~1 ~ #uvm:air positioned ~ ~1 ~1 if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore
+execute if block ~ ~1 ~ #uvm:air positioned ~-1 ~1 ~ if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore
+execute if block ~ ~1 ~ #uvm:air positioned ~1 ~1 ~ if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore
+execute if block ~-1 ~ ~ #uvm:air positioned ~-1 ~ ~-1 if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore
+execute if block ~-1 ~ ~ #uvm:air positioned ~-1 ~ ~1 if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore
+execute if block ~-1 ~ ~ #uvm:air positioned ~-1 ~-1 ~ if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore
+execute if block ~-1 ~ ~ #uvm:air positioned ~-1 ~1 ~ if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore
+execute if block ~1 ~ ~ #uvm:air positioned ~1 ~ ~-1 if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore
+execute if block ~1 ~ ~ #uvm:air positioned ~1 ~ ~1 if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore
+execute if block ~1 ~ ~ #uvm:air positioned ~1 ~-1 ~ if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore
+execute if block ~1 ~ ~ #uvm:air positioned ~1 ~1 ~ if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore
+execute if block ~ ~-1 ~-1 #uvm:air positioned ~-1 ~-1 ~-1 if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore
+execute if block ~ ~-1 ~-1 #uvm:air positioned ~1 ~-1 ~-1 if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore
+execute if block ~ ~-1 ~1 #uvm:air positioned ~-1 ~-1 ~1 if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore
+execute if block ~ ~-1 ~1 #uvm:air positioned ~1 ~-1 ~1 if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore
+execute if block ~ ~1 ~-1 #uvm:air positioned ~-1 ~1 ~-1 if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore
+execute if block ~ ~1 ~-1 #uvm:air positioned ~1 ~1 ~-1 if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore
+execute if block ~ ~1 ~1 #uvm:air positioned ~-1 ~1 ~1 if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore
+execute if block ~ ~1 ~1 #uvm:air positioned ~1 ~1 ~1 if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore
+execute if block ~-1 ~ ~-1 #uvm:air positioned ~-1 ~-1 ~-1 if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore
+execute if block ~-1 ~ ~-1 #uvm:air positioned ~-1 ~1 ~-1 if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore
+execute if block ~-1 ~ ~1 #uvm:air positioned ~-1 ~-1 ~1 if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore
+execute if block ~-1 ~ ~1 #uvm:air positioned ~-1 ~1 ~1 if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore
+execute if block ~-1 ~-1 ~ #uvm:air positioned ~-1 ~-1 ~-1 if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore
+execute if block ~-1 ~-1 ~ #uvm:air positioned ~-1 ~-1 ~1 if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore
+execute if block ~-1 ~1 ~ #uvm:air positioned ~-1 ~1 ~-1 if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore
+execute if block ~-1 ~1 ~ #uvm:air positioned ~-1 ~1 ~1 if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore
+execute if block ~1 ~ ~-1 #uvm:air positioned ~1 ~-1 ~-1 if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore
+execute if block ~1 ~ ~-1 #uvm:air positioned ~1 ~1 ~-1 if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore
+execute if block ~1 ~ ~1 #uvm:air positioned ~1 ~-1 ~1 if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore
+execute if block ~1 ~ ~1 #uvm:air positioned ~1 ~1 ~1 if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore
+execute if block ~1 ~-1 ~ #uvm:air positioned ~1 ~-1 ~-1 if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore
+execute if block ~1 ~-1 ~ #uvm:air positioned ~1 ~-1 ~1 if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore
+execute if block ~1 ~1 ~ #uvm:air positioned ~1 ~1 ~-1 if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore
+execute if block ~1 ~1 ~ #uvm:air positioned ~1 ~1 ~1 if block ~ ~ ~ gold_ore run function uvm:mine/ore/break/gold_ore

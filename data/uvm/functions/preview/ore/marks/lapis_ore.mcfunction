@@ -1,57 +1,57 @@
-execute positioned ~ ~ ~ unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/try_spawn_mark
+execute positioned ~ ~ ~ unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/try_spawn_mark
 
-execute positioned ~ ~ ~1 if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
-execute positioned ~ ~ ~-1 if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
-execute positioned ~1 ~ ~ if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
-execute positioned ~-1 ~ ~ if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
-execute positioned ~ ~1 ~ if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
-execute positioned ~ ~-1 ~ if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
+execute positioned ~ ~ ~1 if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore
+execute positioned ~ ~ ~-1 if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore
+execute positioned ~1 ~ ~ if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore
+execute positioned ~-1 ~ ~ if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore
+execute positioned ~ ~1 ~ if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore
+execute positioned ~ ~-1 ~ if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore
 
-execute if block ~ ~ ~-1 #uvm:air positioned ~ ~-1 ~-1 if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
-execute if block ~ ~ ~-1 #uvm:air positioned ~ ~1 ~-1 if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
-execute if block ~ ~ ~-1 #uvm:air positioned ~-1 ~ ~-1 if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
-execute if block ~ ~ ~-1 #uvm:air positioned ~1 ~ ~-1 if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
-execute if block ~ ~ ~1 #uvm:air positioned ~ ~-1 ~1 if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
-execute if block ~ ~ ~1 #uvm:air positioned ~ ~1 ~1 if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
-execute if block ~ ~ ~1 #uvm:air positioned ~-1 ~ ~1 if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
-execute if block ~ ~ ~1 #uvm:air positioned ~1 ~ ~1 if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
-execute if block ~ ~-1 ~ #uvm:air positioned ~ ~-1 ~-1 if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
-execute if block ~ ~-1 ~ #uvm:air positioned ~ ~-1 ~1 if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
-execute if block ~ ~-1 ~ #uvm:air positioned ~-1 ~-1 ~ if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
-execute if block ~ ~-1 ~ #uvm:air positioned ~1 ~-1 ~ if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
-execute if block ~ ~1 ~ #uvm:air positioned ~ ~1 ~-1 if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
-execute if block ~ ~1 ~ #uvm:air positioned ~ ~1 ~1 if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
-execute if block ~ ~1 ~ #uvm:air positioned ~-1 ~1 ~ if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
-execute if block ~ ~1 ~ #uvm:air positioned ~1 ~1 ~ if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
-execute if block ~-1 ~ ~ #uvm:air positioned ~-1 ~ ~-1 if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
-execute if block ~-1 ~ ~ #uvm:air positioned ~-1 ~ ~1 if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
-execute if block ~-1 ~ ~ #uvm:air positioned ~-1 ~-1 ~ if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
-execute if block ~-1 ~ ~ #uvm:air positioned ~-1 ~1 ~ if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
-execute if block ~1 ~ ~ #uvm:air positioned ~1 ~ ~-1 if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
-execute if block ~1 ~ ~ #uvm:air positioned ~1 ~ ~1 if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
-execute if block ~1 ~ ~ #uvm:air positioned ~1 ~-1 ~ if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
-execute if block ~1 ~ ~ #uvm:air positioned ~1 ~1 ~ if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
-execute if block ~ ~-1 ~-1 #uvm:air positioned ~-1 ~-1 ~-1 if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
-execute if block ~ ~-1 ~-1 #uvm:air positioned ~1 ~-1 ~-1 if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
-execute if block ~ ~-1 ~1 #uvm:air positioned ~-1 ~-1 ~1 if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
-execute if block ~ ~-1 ~1 #uvm:air positioned ~1 ~-1 ~1 if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
-execute if block ~ ~1 ~-1 #uvm:air positioned ~-1 ~1 ~-1 if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
-execute if block ~ ~1 ~-1 #uvm:air positioned ~1 ~1 ~-1 if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
-execute if block ~ ~1 ~1 #uvm:air positioned ~-1 ~1 ~1 if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
-execute if block ~ ~1 ~1 #uvm:air positioned ~1 ~1 ~1 if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
-execute if block ~-1 ~ ~-1 #uvm:air positioned ~-1 ~-1 ~-1 if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
-execute if block ~-1 ~ ~-1 #uvm:air positioned ~-1 ~1 ~-1 if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
-execute if block ~-1 ~ ~1 #uvm:air positioned ~-1 ~-1 ~1 if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
-execute if block ~-1 ~ ~1 #uvm:air positioned ~-1 ~1 ~1 if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
-execute if block ~-1 ~-1 ~ #uvm:air positioned ~-1 ~-1 ~-1 if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
-execute if block ~-1 ~-1 ~ #uvm:air positioned ~-1 ~-1 ~1 if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
-execute if block ~-1 ~1 ~ #uvm:air positioned ~-1 ~1 ~-1 if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
-execute if block ~-1 ~1 ~ #uvm:air positioned ~-1 ~1 ~1 if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
-execute if block ~1 ~ ~-1 #uvm:air positioned ~1 ~-1 ~-1 if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
-execute if block ~1 ~ ~-1 #uvm:air positioned ~1 ~1 ~-1 if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
-execute if block ~1 ~ ~1 #uvm:air positioned ~1 ~-1 ~1 if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
-execute if block ~1 ~ ~1 #uvm:air positioned ~1 ~1 ~1 if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
-execute if block ~1 ~-1 ~ #uvm:air positioned ~1 ~-1 ~-1 if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
-execute if block ~1 ~-1 ~ #uvm:air positioned ~1 ~-1 ~1 if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
-execute if block ~1 ~1 ~ #uvm:air positioned ~1 ~1 ~-1 if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
-execute if block ~1 ~1 ~ #uvm:air positioned ~1 ~1 ~1 if block ~ ~ ~ minecraft:lapis_ore unless entity @e[tag=ore_mark,distance=..0.1,type=minecraft:snowball] run function uvm:preview/ore/marks/lapis_ore
+execute if block ~ ~ ~-1 #uvm:air positioned ~ ~-1 ~-1 if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore
+execute if block ~ ~ ~-1 #uvm:air positioned ~ ~1 ~-1 if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore
+execute if block ~ ~ ~-1 #uvm:air positioned ~-1 ~ ~-1 if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore
+execute if block ~ ~ ~-1 #uvm:air positioned ~1 ~ ~-1 if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore
+execute if block ~ ~ ~1 #uvm:air positioned ~ ~-1 ~1 if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore
+execute if block ~ ~ ~1 #uvm:air positioned ~ ~1 ~1 if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore
+execute if block ~ ~ ~1 #uvm:air positioned ~-1 ~ ~1 if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore
+execute if block ~ ~ ~1 #uvm:air positioned ~1 ~ ~1 if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore
+execute if block ~ ~-1 ~ #uvm:air positioned ~ ~-1 ~-1 if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore
+execute if block ~ ~-1 ~ #uvm:air positioned ~ ~-1 ~1 if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore
+execute if block ~ ~-1 ~ #uvm:air positioned ~-1 ~-1 ~ if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore
+execute if block ~ ~-1 ~ #uvm:air positioned ~1 ~-1 ~ if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore
+execute if block ~ ~1 ~ #uvm:air positioned ~ ~1 ~-1 if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore
+execute if block ~ ~1 ~ #uvm:air positioned ~ ~1 ~1 if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore
+execute if block ~ ~1 ~ #uvm:air positioned ~-1 ~1 ~ if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore
+execute if block ~ ~1 ~ #uvm:air positioned ~1 ~1 ~ if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore
+execute if block ~-1 ~ ~ #uvm:air positioned ~-1 ~ ~-1 if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore
+execute if block ~-1 ~ ~ #uvm:air positioned ~-1 ~ ~1 if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore
+execute if block ~-1 ~ ~ #uvm:air positioned ~-1 ~-1 ~ if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore
+execute if block ~-1 ~ ~ #uvm:air positioned ~-1 ~1 ~ if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore
+execute if block ~1 ~ ~ #uvm:air positioned ~1 ~ ~-1 if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore
+execute if block ~1 ~ ~ #uvm:air positioned ~1 ~ ~1 if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore
+execute if block ~1 ~ ~ #uvm:air positioned ~1 ~-1 ~ if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore
+execute if block ~1 ~ ~ #uvm:air positioned ~1 ~1 ~ if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore
+execute if block ~ ~-1 ~-1 #uvm:air positioned ~-1 ~-1 ~-1 if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore
+execute if block ~ ~-1 ~-1 #uvm:air positioned ~1 ~-1 ~-1 if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore
+execute if block ~ ~-1 ~1 #uvm:air positioned ~-1 ~-1 ~1 if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore
+execute if block ~ ~-1 ~1 #uvm:air positioned ~1 ~-1 ~1 if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore
+execute if block ~ ~1 ~-1 #uvm:air positioned ~-1 ~1 ~-1 if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore
+execute if block ~ ~1 ~-1 #uvm:air positioned ~1 ~1 ~-1 if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore
+execute if block ~ ~1 ~1 #uvm:air positioned ~-1 ~1 ~1 if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore
+execute if block ~ ~1 ~1 #uvm:air positioned ~1 ~1 ~1 if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore
+execute if block ~-1 ~ ~-1 #uvm:air positioned ~-1 ~-1 ~-1 if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore
+execute if block ~-1 ~ ~-1 #uvm:air positioned ~-1 ~1 ~-1 if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore
+execute if block ~-1 ~ ~1 #uvm:air positioned ~-1 ~-1 ~1 if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore
+execute if block ~-1 ~ ~1 #uvm:air positioned ~-1 ~1 ~1 if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore
+execute if block ~-1 ~-1 ~ #uvm:air positioned ~-1 ~-1 ~-1 if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore
+execute if block ~-1 ~-1 ~ #uvm:air positioned ~-1 ~-1 ~1 if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore
+execute if block ~-1 ~1 ~ #uvm:air positioned ~-1 ~1 ~-1 if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore
+execute if block ~-1 ~1 ~ #uvm:air positioned ~-1 ~1 ~1 if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore
+execute if block ~1 ~ ~-1 #uvm:air positioned ~1 ~-1 ~-1 if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore
+execute if block ~1 ~ ~-1 #uvm:air positioned ~1 ~1 ~-1 if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore
+execute if block ~1 ~ ~1 #uvm:air positioned ~1 ~-1 ~1 if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore
+execute if block ~1 ~ ~1 #uvm:air positioned ~1 ~1 ~1 if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore
+execute if block ~1 ~-1 ~ #uvm:air positioned ~1 ~-1 ~-1 if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore
+execute if block ~1 ~-1 ~ #uvm:air positioned ~1 ~-1 ~1 if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore
+execute if block ~1 ~1 ~ #uvm:air positioned ~1 ~1 ~-1 if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore
+execute if block ~1 ~1 ~ #uvm:air positioned ~1 ~1 ~1 if block ~ ~ ~ lapis_ore unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/ore/marks/lapis_ore

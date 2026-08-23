@@ -1,0 +1,63 @@
+template_execute
+
+execute positioned ~ ~ ~1 if block ~ ~ ~ template_leaf template_function/template_leaf_func
+execute positioned ~ ~ ~-1 if block ~ ~ ~ template_leaf template_function/template_leaf_func
+execute positioned ~1 ~ ~ if block ~ ~ ~ template_leaf template_function/template_leaf_func
+execute positioned ~-1 ~ ~ if block ~ ~ ~ template_leaf template_function/template_leaf_func
+execute positioned ~ ~1 ~ if block ~ ~ ~ template_leaf template_function/template_leaf_func
+execute positioned ~ ~-1 ~ if block ~ ~ ~ template_leaf template_function/template_leaf_func
+
+execute positioned ~ ~ ~1 if block ~ ~ ~ template_log template_function/template_log_func
+execute positioned ~ ~ ~-1 if block ~ ~ ~ template_log template_function/template_log_func
+execute positioned ~1 ~ ~ if block ~ ~ ~ template_log template_function/template_log_func
+execute positioned ~-1 ~ ~ if block ~ ~ ~ template_log template_function/template_log_func
+execute positioned ~ ~1 ~ if block ~ ~ ~ template_log template_function/template_log_func
+execute positioned ~ ~-1 ~ if block ~ ~ ~ template_log template_function/template_log_func
+execute if block ~ ~ ~-1 #uvm:air positioned ~ ~-1 ~-1 if block ~ ~ ~ template_log template_function/template_log_func
+execute if block ~ ~ ~-1 #uvm:air positioned ~ ~1 ~-1 if block ~ ~ ~ template_log template_function/template_log_func
+execute if block ~ ~ ~-1 #uvm:air positioned ~-1 ~ ~-1 if block ~ ~ ~ template_log template_function/template_log_func
+execute if block ~ ~ ~-1 #uvm:air positioned ~1 ~ ~-1 if block ~ ~ ~ template_log template_function/template_log_func
+execute if block ~ ~ ~1 #uvm:air positioned ~ ~-1 ~1 if block ~ ~ ~ template_log template_function/template_log_func
+execute if block ~ ~ ~1 #uvm:air positioned ~ ~1 ~1 if block ~ ~ ~ template_log template_function/template_log_func
+execute if block ~ ~ ~1 #uvm:air positioned ~-1 ~ ~1 if block ~ ~ ~ template_log template_function/template_log_func
+execute if block ~ ~ ~1 #uvm:air positioned ~1 ~ ~1 if block ~ ~ ~ template_log template_function/template_log_func
+execute if block ~ ~-1 ~ #uvm:air positioned ~ ~-1 ~-1 if block ~ ~ ~ template_log template_function/template_log_func
+execute if block ~ ~-1 ~ #uvm:air positioned ~ ~-1 ~1 if block ~ ~ ~ template_log template_function/template_log_func
+execute if block ~ ~-1 ~ #uvm:air positioned ~-1 ~-1 ~ if block ~ ~ ~ template_log template_function/template_log_func
+execute if block ~ ~-1 ~ #uvm:air positioned ~1 ~-1 ~ if block ~ ~ ~ template_log template_function/template_log_func
+execute if block ~ ~1 ~ #uvm:air positioned ~ ~1 ~-1 if block ~ ~ ~ template_log template_function/template_log_func
+execute if block ~ ~1 ~ #uvm:air positioned ~ ~1 ~1 if block ~ ~ ~ template_log template_function/template_log_func
+execute if block ~ ~1 ~ #uvm:air positioned ~-1 ~1 ~ if block ~ ~ ~ template_log template_function/template_log_func
+execute if block ~ ~1 ~ #uvm:air positioned ~1 ~1 ~ if block ~ ~ ~ template_log template_function/template_log_func
+execute if block ~-1 ~ ~ #uvm:air positioned ~-1 ~ ~-1 if block ~ ~ ~ template_log template_function/template_log_func
+execute if block ~-1 ~ ~ #uvm:air positioned ~-1 ~ ~1 if block ~ ~ ~ template_log template_function/template_log_func
+execute if block ~-1 ~ ~ #uvm:air positioned ~-1 ~-1 ~ if block ~ ~ ~ template_log template_function/template_log_func
+execute if block ~-1 ~ ~ #uvm:air positioned ~-1 ~1 ~ if block ~ ~ ~ template_log template_function/template_log_func
+execute if block ~1 ~ ~ #uvm:air positioned ~1 ~ ~-1 if block ~ ~ ~ template_log template_function/template_log_func
+execute if block ~1 ~ ~ #uvm:air positioned ~1 ~ ~1 if block ~ ~ ~ template_log template_function/template_log_func
+execute if block ~1 ~ ~ #uvm:air positioned ~1 ~-1 ~ if block ~ ~ ~ template_log template_function/template_log_func
+execute if block ~1 ~ ~ #uvm:air positioned ~1 ~1 ~ if block ~ ~ ~ template_log template_function/template_log_func
+execute if block ~ ~-1 ~-1 #uvm:air positioned ~-1 ~-1 ~-1 if block ~ ~ ~ template_log template_function/template_log_func
+execute if block ~ ~-1 ~-1 #uvm:air positioned ~1 ~-1 ~-1 if block ~ ~ ~ template_log template_function/template_log_func
+execute if block ~ ~-1 ~1 #uvm:air positioned ~-1 ~-1 ~1 if block ~ ~ ~ template_log template_function/template_log_func
+execute if block ~ ~-1 ~1 #uvm:air positioned ~1 ~-1 ~1 if block ~ ~ ~ template_log template_function/template_log_func
+execute if block ~ ~1 ~-1 #uvm:air positioned ~-1 ~1 ~-1 if block ~ ~ ~ template_log template_function/template_log_func
+execute if block ~ ~1 ~-1 #uvm:air positioned ~1 ~1 ~-1 if block ~ ~ ~ template_log template_function/template_log_func
+execute if block ~ ~1 ~1 #uvm:air positioned ~-1 ~1 ~1 if block ~ ~ ~ template_log template_function/template_log_func
+execute if block ~ ~1 ~1 #uvm:air positioned ~1 ~1 ~1 if block ~ ~ ~ template_log template_function/template_log_func
+execute if block ~-1 ~ ~-1 #uvm:air positioned ~-1 ~-1 ~-1 if block ~ ~ ~ template_log template_function/template_log_func
+execute if block ~-1 ~ ~-1 #uvm:air positioned ~-1 ~1 ~-1 if block ~ ~ ~ template_log template_function/template_log_func
+execute if block ~-1 ~ ~1 #uvm:air positioned ~-1 ~-1 ~1 if block ~ ~ ~ template_log template_function/template_log_func
+execute if block ~-1 ~ ~1 #uvm:air positioned ~-1 ~1 ~1 if block ~ ~ ~ template_log template_function/template_log_func
+execute if block ~-1 ~-1 ~ #uvm:air positioned ~-1 ~-1 ~-1 if block ~ ~ ~ template_log template_function/template_log_func
+execute if block ~-1 ~-1 ~ #uvm:air positioned ~-1 ~-1 ~1 if block ~ ~ ~ template_log template_function/template_log_func
+execute if block ~-1 ~1 ~ #uvm:air positioned ~-1 ~1 ~-1 if block ~ ~ ~ template_log template_function/template_log_func
+execute if block ~-1 ~1 ~ #uvm:air positioned ~-1 ~1 ~1 if block ~ ~ ~ template_log template_function/template_log_func
+execute if block ~1 ~ ~-1 #uvm:air positioned ~1 ~-1 ~-1 if block ~ ~ ~ template_log template_function/template_log_func
+execute if block ~1 ~ ~-1 #uvm:air positioned ~1 ~1 ~-1 if block ~ ~ ~ template_log template_function/template_log_func
+execute if block ~1 ~ ~1 #uvm:air positioned ~1 ~-1 ~1 if block ~ ~ ~ template_log template_function/template_log_func
+execute if block ~1 ~ ~1 #uvm:air positioned ~1 ~1 ~1 if block ~ ~ ~ template_log template_function/template_log_func
+execute if block ~1 ~-1 ~ #uvm:air positioned ~1 ~-1 ~-1 if block ~ ~ ~ template_log template_function/template_log_func
+execute if block ~1 ~-1 ~ #uvm:air positioned ~1 ~-1 ~1 if block ~ ~ ~ template_log template_function/template_log_func
+execute if block ~1 ~1 ~ #uvm:air positioned ~1 ~1 ~-1 if block ~ ~ ~ template_log template_function/template_log_func
+execute if block ~1 ~1 ~ #uvm:air positioned ~1 ~1 ~1 if block ~ ~ ~ template_log template_function/template_log_func

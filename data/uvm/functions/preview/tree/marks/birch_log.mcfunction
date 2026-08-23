@@ -13,12 +13,51 @@ execute positioned ~1 ~ ~ if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark
 execute positioned ~-1 ~ ~ if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
 execute positioned ~ ~1 ~ if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
 execute positioned ~ ~-1 ~ if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
-execute positioned ~1 ~1 ~ if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
-execute positioned ~-1 ~1 ~ if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
-execute positioned ~ ~1 ~1 if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
-execute positioned ~ ~1 ~-1 if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
-execute positioned ~1 ~1 ~1 if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
-execute positioned ~1 ~1 ~-1 if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
-execute positioned ~-1 ~1 ~1 if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
-execute positioned ~-1 ~1 ~-1 if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
-
+execute if block ~ ~ ~-1 #uvm:air positioned ~ ~-1 ~-1 if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
+execute if block ~ ~ ~-1 #uvm:air positioned ~ ~1 ~-1 if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
+execute if block ~ ~ ~-1 #uvm:air positioned ~-1 ~ ~-1 if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
+execute if block ~ ~ ~-1 #uvm:air positioned ~1 ~ ~-1 if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
+execute if block ~ ~ ~1 #uvm:air positioned ~ ~-1 ~1 if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
+execute if block ~ ~ ~1 #uvm:air positioned ~ ~1 ~1 if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
+execute if block ~ ~ ~1 #uvm:air positioned ~-1 ~ ~1 if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
+execute if block ~ ~ ~1 #uvm:air positioned ~1 ~ ~1 if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
+execute if block ~ ~-1 ~ #uvm:air positioned ~ ~-1 ~-1 if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
+execute if block ~ ~-1 ~ #uvm:air positioned ~ ~-1 ~1 if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
+execute if block ~ ~-1 ~ #uvm:air positioned ~-1 ~-1 ~ if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
+execute if block ~ ~-1 ~ #uvm:air positioned ~1 ~-1 ~ if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
+execute if block ~ ~1 ~ #uvm:air positioned ~ ~1 ~-1 if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
+execute if block ~ ~1 ~ #uvm:air positioned ~ ~1 ~1 if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
+execute if block ~ ~1 ~ #uvm:air positioned ~-1 ~1 ~ if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
+execute if block ~ ~1 ~ #uvm:air positioned ~1 ~1 ~ if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
+execute if block ~-1 ~ ~ #uvm:air positioned ~-1 ~ ~-1 if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
+execute if block ~-1 ~ ~ #uvm:air positioned ~-1 ~ ~1 if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
+execute if block ~-1 ~ ~ #uvm:air positioned ~-1 ~-1 ~ if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
+execute if block ~-1 ~ ~ #uvm:air positioned ~-1 ~1 ~ if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
+execute if block ~1 ~ ~ #uvm:air positioned ~1 ~ ~-1 if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
+execute if block ~1 ~ ~ #uvm:air positioned ~1 ~ ~1 if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
+execute if block ~1 ~ ~ #uvm:air positioned ~1 ~-1 ~ if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
+execute if block ~1 ~ ~ #uvm:air positioned ~1 ~1 ~ if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
+execute if block ~ ~-1 ~-1 #uvm:air positioned ~-1 ~-1 ~-1 if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
+execute if block ~ ~-1 ~-1 #uvm:air positioned ~1 ~-1 ~-1 if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
+execute if block ~ ~-1 ~1 #uvm:air positioned ~-1 ~-1 ~1 if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
+execute if block ~ ~-1 ~1 #uvm:air positioned ~1 ~-1 ~1 if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
+execute if block ~ ~1 ~-1 #uvm:air positioned ~-1 ~1 ~-1 if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
+execute if block ~ ~1 ~-1 #uvm:air positioned ~1 ~1 ~-1 if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
+execute if block ~ ~1 ~1 #uvm:air positioned ~-1 ~1 ~1 if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
+execute if block ~ ~1 ~1 #uvm:air positioned ~1 ~1 ~1 if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
+execute if block ~-1 ~ ~-1 #uvm:air positioned ~-1 ~-1 ~-1 if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
+execute if block ~-1 ~ ~-1 #uvm:air positioned ~-1 ~1 ~-1 if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
+execute if block ~-1 ~ ~1 #uvm:air positioned ~-1 ~-1 ~1 if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
+execute if block ~-1 ~ ~1 #uvm:air positioned ~-1 ~1 ~1 if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
+execute if block ~-1 ~-1 ~ #uvm:air positioned ~-1 ~-1 ~-1 if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
+execute if block ~-1 ~-1 ~ #uvm:air positioned ~-1 ~-1 ~1 if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
+execute if block ~-1 ~1 ~ #uvm:air positioned ~-1 ~1 ~-1 if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
+execute if block ~-1 ~1 ~ #uvm:air positioned ~-1 ~1 ~1 if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
+execute if block ~1 ~ ~-1 #uvm:air positioned ~1 ~-1 ~-1 if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
+execute if block ~1 ~ ~-1 #uvm:air positioned ~1 ~1 ~-1 if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
+execute if block ~1 ~ ~1 #uvm:air positioned ~1 ~-1 ~1 if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
+execute if block ~1 ~ ~1 #uvm:air positioned ~1 ~1 ~1 if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
+execute if block ~1 ~-1 ~ #uvm:air positioned ~1 ~-1 ~-1 if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
+execute if block ~1 ~-1 ~ #uvm:air positioned ~1 ~-1 ~1 if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
+execute if block ~1 ~1 ~ #uvm:air positioned ~1 ~1 ~-1 if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log
+execute if block ~1 ~1 ~ #uvm:air positioned ~1 ~1 ~1 if block ~ ~ ~ birch_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/birch_log

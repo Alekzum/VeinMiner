@@ -6,4 +6,3 @@ execute positioned ~1 ~ ~ if block ~ ~ ~ dark_oak_leaves unless entity @e[tag=or
 execute positioned ~-1 ~ ~ if block ~ ~ ~ dark_oak_leaves unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/dark_oak_leaves
 execute positioned ~ ~1 ~ if block ~ ~ ~ dark_oak_leaves unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/dark_oak_leaves
 execute positioned ~ ~-1 ~ if block ~ ~ ~ dark_oak_leaves unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/dark_oak_leaves
-

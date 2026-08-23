@@ -17,7 +17,7 @@
 	},
 	"Log to player": {
 		"scope": "mcfunction",
-		"prefix": "log",
+		"prefix": "debug",
 		"body": "execute if score @s uvm.debug matches 1 run tellraw @s [{\"text\":\"[\", \"color\":\"gray\", \"extra\":[{\"text\":\"uvm:${1:filename}\", \"color\":\"gold\"}, \"]\"]}, \"${2:message}\"]"
 	},
 	"Trace to player": {
@@ -27,12 +27,12 @@
 	},
 	"Tell to all players": {
 		"scope": "mcfunction",
-		"prefix": "tellall",
+		"prefix": "tell-all",
 		"body": "tellraw @a [{\"text\":\"[uvm:${1:filename}] \", \"color\": \"gold\"}, \"${2:ping}\"]"
 	},
 	"Tell to executor": {
 		"scope": "mcfunction",
-		"prefix": "tellexecutor",
+		"prefix": "tell-executor",
 		"body": "tellraw @s [{\"text\":\"[uvm:${1:filename}] \", \"color\": \"gold\"}, \"${2:ping}\"]"
 	}
 	// Place your VeinMiner1.20.5+ workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 

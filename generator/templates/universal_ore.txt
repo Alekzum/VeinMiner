@@ -1,0 +1,57 @@
+template_execute
+
+execute positioned ~ ~ ~1 if block ~ ~ ~ template_ore template_function/template_ore_func
+execute positioned ~ ~ ~-1 if block ~ ~ ~ template_ore template_function/template_ore_func
+execute positioned ~1 ~ ~ if block ~ ~ ~ template_ore template_function/template_ore_func
+execute positioned ~-1 ~ ~ if block ~ ~ ~ template_ore template_function/template_ore_func
+execute positioned ~ ~1 ~ if block ~ ~ ~ template_ore template_function/template_ore_func
+execute positioned ~ ~-1 ~ if block ~ ~ ~ template_ore template_function/template_ore_func
+
+execute if block ~ ~ ~-1 #uvm:air positioned ~ ~-1 ~-1 if block ~ ~ ~ template_ore template_function/template_ore_func
+execute if block ~ ~ ~-1 #uvm:air positioned ~ ~1 ~-1 if block ~ ~ ~ template_ore template_function/template_ore_func
+execute if block ~ ~ ~-1 #uvm:air positioned ~-1 ~ ~-1 if block ~ ~ ~ template_ore template_function/template_ore_func
+execute if block ~ ~ ~-1 #uvm:air positioned ~1 ~ ~-1 if block ~ ~ ~ template_ore template_function/template_ore_func
+execute if block ~ ~ ~1 #uvm:air positioned ~ ~-1 ~1 if block ~ ~ ~ template_ore template_function/template_ore_func
+execute if block ~ ~ ~1 #uvm:air positioned ~ ~1 ~1 if block ~ ~ ~ template_ore template_function/template_ore_func
+execute if block ~ ~ ~1 #uvm:air positioned ~-1 ~ ~1 if block ~ ~ ~ template_ore template_function/template_ore_func
+execute if block ~ ~ ~1 #uvm:air positioned ~1 ~ ~1 if block ~ ~ ~ template_ore template_function/template_ore_func
+execute if block ~ ~-1 ~ #uvm:air positioned ~ ~-1 ~-1 if block ~ ~ ~ template_ore template_function/template_ore_func
+execute if block ~ ~-1 ~ #uvm:air positioned ~ ~-1 ~1 if block ~ ~ ~ template_ore template_function/template_ore_func
+execute if block ~ ~-1 ~ #uvm:air positioned ~-1 ~-1 ~ if block ~ ~ ~ template_ore template_function/template_ore_func
+execute if block ~ ~-1 ~ #uvm:air positioned ~1 ~-1 ~ if block ~ ~ ~ template_ore template_function/template_ore_func
+execute if block ~ ~1 ~ #uvm:air positioned ~ ~1 ~-1 if block ~ ~ ~ template_ore template_function/template_ore_func
+execute if block ~ ~1 ~ #uvm:air positioned ~ ~1 ~1 if block ~ ~ ~ template_ore template_function/template_ore_func
+execute if block ~ ~1 ~ #uvm:air positioned ~-1 ~1 ~ if block ~ ~ ~ template_ore template_function/template_ore_func
+execute if block ~ ~1 ~ #uvm:air positioned ~1 ~1 ~ if block ~ ~ ~ template_ore template_function/template_ore_func
+execute if block ~-1 ~ ~ #uvm:air positioned ~-1 ~ ~-1 if block ~ ~ ~ template_ore template_function/template_ore_func
+execute if block ~-1 ~ ~ #uvm:air positioned ~-1 ~ ~1 if block ~ ~ ~ template_ore template_function/template_ore_func
+execute if block ~-1 ~ ~ #uvm:air positioned ~-1 ~-1 ~ if block ~ ~ ~ template_ore template_function/template_ore_func
+execute if block ~-1 ~ ~ #uvm:air positioned ~-1 ~1 ~ if block ~ ~ ~ template_ore template_function/template_ore_func
+execute if block ~1 ~ ~ #uvm:air positioned ~1 ~ ~-1 if block ~ ~ ~ template_ore template_function/template_ore_func
+execute if block ~1 ~ ~ #uvm:air positioned ~1 ~ ~1 if block ~ ~ ~ template_ore template_function/template_ore_func
+execute if block ~1 ~ ~ #uvm:air positioned ~1 ~-1 ~ if block ~ ~ ~ template_ore template_function/template_ore_func
+execute if block ~1 ~ ~ #uvm:air positioned ~1 ~1 ~ if block ~ ~ ~ template_ore template_function/template_ore_func
+execute if block ~ ~-1 ~-1 #uvm:air positioned ~-1 ~-1 ~-1 if block ~ ~ ~ template_ore template_function/template_ore_func
+execute if block ~ ~-1 ~-1 #uvm:air positioned ~1 ~-1 ~-1 if block ~ ~ ~ template_ore template_function/template_ore_func
+execute if block ~ ~-1 ~1 #uvm:air positioned ~-1 ~-1 ~1 if block ~ ~ ~ template_ore template_function/template_ore_func
+execute if block ~ ~-1 ~1 #uvm:air positioned ~1 ~-1 ~1 if block ~ ~ ~ template_ore template_function/template_ore_func
+execute if block ~ ~1 ~-1 #uvm:air positioned ~-1 ~1 ~-1 if block ~ ~ ~ template_ore template_function/template_ore_func
+execute if block ~ ~1 ~-1 #uvm:air positioned ~1 ~1 ~-1 if block ~ ~ ~ template_ore template_function/template_ore_func
+execute if block ~ ~1 ~1 #uvm:air positioned ~-1 ~1 ~1 if block ~ ~ ~ template_ore template_function/template_ore_func
+execute if block ~ ~1 ~1 #uvm:air positioned ~1 ~1 ~1 if block ~ ~ ~ template_ore template_function/template_ore_func
+execute if block ~-1 ~ ~-1 #uvm:air positioned ~-1 ~-1 ~-1 if block ~ ~ ~ template_ore template_function/template_ore_func
+execute if block ~-1 ~ ~-1 #uvm:air positioned ~-1 ~1 ~-1 if block ~ ~ ~ template_ore template_function/template_ore_func
+execute if block ~-1 ~ ~1 #uvm:air positioned ~-1 ~-1 ~1 if block ~ ~ ~ template_ore template_function/template_ore_func
+execute if block ~-1 ~ ~1 #uvm:air positioned ~-1 ~1 ~1 if block ~ ~ ~ template_ore template_function/template_ore_func
+execute if block ~-1 ~-1 ~ #uvm:air positioned ~-1 ~-1 ~-1 if block ~ ~ ~ template_ore template_function/template_ore_func
+execute if block ~-1 ~-1 ~ #uvm:air positioned ~-1 ~-1 ~1 if block ~ ~ ~ template_ore template_function/template_ore_func
+execute if block ~-1 ~1 ~ #uvm:air positioned ~-1 ~1 ~-1 if block ~ ~ ~ template_ore template_function/template_ore_func
+execute if block ~-1 ~1 ~ #uvm:air positioned ~-1 ~1 ~1 if block ~ ~ ~ template_ore template_function/template_ore_func
+execute if block ~1 ~ ~-1 #uvm:air positioned ~1 ~-1 ~-1 if block ~ ~ ~ template_ore template_function/template_ore_func
+execute if block ~1 ~ ~-1 #uvm:air positioned ~1 ~1 ~-1 if block ~ ~ ~ template_ore template_function/template_ore_func
+execute if block ~1 ~ ~1 #uvm:air positioned ~1 ~-1 ~1 if block ~ ~ ~ template_ore template_function/template_ore_func
+execute if block ~1 ~ ~1 #uvm:air positioned ~1 ~1 ~1 if block ~ ~ ~ template_ore template_function/template_ore_func
+execute if block ~1 ~-1 ~ #uvm:air positioned ~1 ~-1 ~-1 if block ~ ~ ~ template_ore template_function/template_ore_func
+execute if block ~1 ~-1 ~ #uvm:air positioned ~1 ~-1 ~1 if block ~ ~ ~ template_ore template_function/template_ore_func
+execute if block ~1 ~1 ~ #uvm:air positioned ~1 ~1 ~-1 if block ~ ~ ~ template_ore template_function/template_ore_func
+execute if block ~1 ~1 ~ #uvm:air positioned ~1 ~1 ~1 if block ~ ~ ~ template_ore template_function/template_ore_func

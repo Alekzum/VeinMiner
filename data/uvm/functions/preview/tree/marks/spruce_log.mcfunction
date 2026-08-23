@@ -13,12 +13,51 @@ execute positioned ~1 ~ ~ if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mar
 execute positioned ~-1 ~ ~ if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
 execute positioned ~ ~1 ~ if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
 execute positioned ~ ~-1 ~ if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
-execute positioned ~1 ~1 ~ if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
-execute positioned ~-1 ~1 ~ if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
-execute positioned ~ ~1 ~1 if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
-execute positioned ~ ~1 ~-1 if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
-execute positioned ~1 ~1 ~1 if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
-execute positioned ~1 ~1 ~-1 if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
-execute positioned ~-1 ~1 ~1 if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
-execute positioned ~-1 ~1 ~-1 if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
-
+execute if block ~ ~ ~-1 #uvm:air positioned ~ ~-1 ~-1 if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
+execute if block ~ ~ ~-1 #uvm:air positioned ~ ~1 ~-1 if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
+execute if block ~ ~ ~-1 #uvm:air positioned ~-1 ~ ~-1 if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
+execute if block ~ ~ ~-1 #uvm:air positioned ~1 ~ ~-1 if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
+execute if block ~ ~ ~1 #uvm:air positioned ~ ~-1 ~1 if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
+execute if block ~ ~ ~1 #uvm:air positioned ~ ~1 ~1 if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
+execute if block ~ ~ ~1 #uvm:air positioned ~-1 ~ ~1 if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
+execute if block ~ ~ ~1 #uvm:air positioned ~1 ~ ~1 if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
+execute if block ~ ~-1 ~ #uvm:air positioned ~ ~-1 ~-1 if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
+execute if block ~ ~-1 ~ #uvm:air positioned ~ ~-1 ~1 if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
+execute if block ~ ~-1 ~ #uvm:air positioned ~-1 ~-1 ~ if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
+execute if block ~ ~-1 ~ #uvm:air positioned ~1 ~-1 ~ if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
+execute if block ~ ~1 ~ #uvm:air positioned ~ ~1 ~-1 if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
+execute if block ~ ~1 ~ #uvm:air positioned ~ ~1 ~1 if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
+execute if block ~ ~1 ~ #uvm:air positioned ~-1 ~1 ~ if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
+execute if block ~ ~1 ~ #uvm:air positioned ~1 ~1 ~ if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
+execute if block ~-1 ~ ~ #uvm:air positioned ~-1 ~ ~-1 if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
+execute if block ~-1 ~ ~ #uvm:air positioned ~-1 ~ ~1 if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
+execute if block ~-1 ~ ~ #uvm:air positioned ~-1 ~-1 ~ if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
+execute if block ~-1 ~ ~ #uvm:air positioned ~-1 ~1 ~ if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
+execute if block ~1 ~ ~ #uvm:air positioned ~1 ~ ~-1 if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
+execute if block ~1 ~ ~ #uvm:air positioned ~1 ~ ~1 if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
+execute if block ~1 ~ ~ #uvm:air positioned ~1 ~-1 ~ if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
+execute if block ~1 ~ ~ #uvm:air positioned ~1 ~1 ~ if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
+execute if block ~ ~-1 ~-1 #uvm:air positioned ~-1 ~-1 ~-1 if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
+execute if block ~ ~-1 ~-1 #uvm:air positioned ~1 ~-1 ~-1 if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
+execute if block ~ ~-1 ~1 #uvm:air positioned ~-1 ~-1 ~1 if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
+execute if block ~ ~-1 ~1 #uvm:air positioned ~1 ~-1 ~1 if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
+execute if block ~ ~1 ~-1 #uvm:air positioned ~-1 ~1 ~-1 if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
+execute if block ~ ~1 ~-1 #uvm:air positioned ~1 ~1 ~-1 if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
+execute if block ~ ~1 ~1 #uvm:air positioned ~-1 ~1 ~1 if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
+execute if block ~ ~1 ~1 #uvm:air positioned ~1 ~1 ~1 if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
+execute if block ~-1 ~ ~-1 #uvm:air positioned ~-1 ~-1 ~-1 if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
+execute if block ~-1 ~ ~-1 #uvm:air positioned ~-1 ~1 ~-1 if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
+execute if block ~-1 ~ ~1 #uvm:air positioned ~-1 ~-1 ~1 if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
+execute if block ~-1 ~ ~1 #uvm:air positioned ~-1 ~1 ~1 if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
+execute if block ~-1 ~-1 ~ #uvm:air positioned ~-1 ~-1 ~-1 if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
+execute if block ~-1 ~-1 ~ #uvm:air positioned ~-1 ~-1 ~1 if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
+execute if block ~-1 ~1 ~ #uvm:air positioned ~-1 ~1 ~-1 if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
+execute if block ~-1 ~1 ~ #uvm:air positioned ~-1 ~1 ~1 if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
+execute if block ~1 ~ ~-1 #uvm:air positioned ~1 ~-1 ~-1 if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
+execute if block ~1 ~ ~-1 #uvm:air positioned ~1 ~1 ~-1 if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
+execute if block ~1 ~ ~1 #uvm:air positioned ~1 ~-1 ~1 if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
+execute if block ~1 ~ ~1 #uvm:air positioned ~1 ~1 ~1 if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
+execute if block ~1 ~-1 ~ #uvm:air positioned ~1 ~-1 ~-1 if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
+execute if block ~1 ~-1 ~ #uvm:air positioned ~1 ~-1 ~1 if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
+execute if block ~1 ~1 ~ #uvm:air positioned ~1 ~1 ~-1 if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
+execute if block ~1 ~1 ~ #uvm:air positioned ~1 ~1 ~1 if block ~ ~ ~ spruce_log unless entity @e[tag=ore_mark,distance=..0.3,type=snowball] run function uvm:preview/tree/marks/spruce_log
