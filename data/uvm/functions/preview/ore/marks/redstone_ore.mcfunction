@@ -4,8 +4,8 @@ execute positioned ~ ~ ~1 if block ~ ~ ~ redstone_ore if score @s uvm.is_invoke 
 execute positioned ~ ~ ~-1 if block ~ ~ ~ redstone_ore if score @s uvm.is_invoke matches 1 unless entity @e[tag=ore_mark,distance=..0.1,type=snowball] run function uvm:preview/ore/marks/redstone_ore
 execute positioned ~1 ~ ~ if block ~ ~ ~ redstone_ore if score @s uvm.is_invoke matches 1 unless entity @e[tag=ore_mark,distance=..0.1,type=snowball] run function uvm:preview/ore/marks/redstone_ore
 execute positioned ~-1 ~ ~ if block ~ ~ ~ redstone_ore if score @s uvm.is_invoke matches 1 unless entity @e[tag=ore_mark,distance=..0.1,type=snowball] run function uvm:preview/ore/marks/redstone_ore
-execute positioned ~ ~1 ~ if block ~ ~ ~ redstone_ore if score @s uvm.is_invoke matches 1 unless entity @e[tag=ore_mark,distance=..0.1,type=snowball] run function uvm:preview/ore/marks/redstone_ore
 execute positioned ~ ~-1 ~ if block ~ ~ ~ redstone_ore if score @s uvm.is_invoke matches 1 unless entity @e[tag=ore_mark,distance=..0.1,type=snowball] run function uvm:preview/ore/marks/redstone_ore
+execute positioned ~ ~1 ~ if block ~ ~ ~ redstone_ore if score @s uvm.is_invoke matches 1 unless entity @e[tag=ore_mark,distance=..0.1,type=snowball] run function uvm:preview/ore/marks/redstone_ore
 
 execute if block ~ ~ ~-1 #uvm:air positioned ~ ~-1 ~-1 if block ~ ~ ~ redstone_ore if score @s uvm.is_invoke matches 1 unless entity @e[tag=ore_mark,distance=..0.1,type=snowball] run function uvm:preview/ore/marks/redstone_ore
 execute if block ~ ~ ~-1 #uvm:air positioned ~ ~1 ~-1 if block ~ ~ ~ redstone_ore if score @s uvm.is_invoke matches 1 unless entity @e[tag=ore_mark,distance=..0.1,type=snowball] run function uvm:preview/ore/marks/redstone_ore

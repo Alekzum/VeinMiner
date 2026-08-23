@@ -4,15 +4,15 @@ execute positioned ~ ~ ~1 if block ~ ~ ~ dark_oak_log if score @s uvm.is_invoke 
 execute positioned ~ ~ ~-1 if block ~ ~ ~ dark_oak_log if score @s uvm.is_invoke matches 1 unless entity @e[tag=ore_mark,distance=..0.1,type=snowball] run function uvm:preview/tree/marks/dark_oak_log
 execute positioned ~1 ~ ~ if block ~ ~ ~ dark_oak_log if score @s uvm.is_invoke matches 1 unless entity @e[tag=ore_mark,distance=..0.1,type=snowball] run function uvm:preview/tree/marks/dark_oak_log
 execute positioned ~-1 ~ ~ if block ~ ~ ~ dark_oak_log if score @s uvm.is_invoke matches 1 unless entity @e[tag=ore_mark,distance=..0.1,type=snowball] run function uvm:preview/tree/marks/dark_oak_log
-execute positioned ~ ~1 ~ if block ~ ~ ~ dark_oak_log if score @s uvm.is_invoke matches 1 unless entity @e[tag=ore_mark,distance=..0.1,type=snowball] run function uvm:preview/tree/marks/dark_oak_log
 execute positioned ~ ~-1 ~ if block ~ ~ ~ dark_oak_log if score @s uvm.is_invoke matches 1 unless entity @e[tag=ore_mark,distance=..0.1,type=snowball] run function uvm:preview/tree/marks/dark_oak_log
+execute positioned ~ ~1 ~ if block ~ ~ ~ dark_oak_log if score @s uvm.is_invoke matches 1 unless entity @e[tag=ore_mark,distance=..0.1,type=snowball] run function uvm:preview/tree/marks/dark_oak_log
 
 execute positioned ~ ~ ~1 if block ~ ~ ~ dark_oak_leaves if score @s uvm.is_invoke matches 1 unless entity @e[tag=ore_mark,distance=..0.1,type=snowball] run function uvm:preview/tree/marks/dark_oak_leaves
 execute positioned ~ ~ ~-1 if block ~ ~ ~ dark_oak_leaves if score @s uvm.is_invoke matches 1 unless entity @e[tag=ore_mark,distance=..0.1,type=snowball] run function uvm:preview/tree/marks/dark_oak_leaves
 execute positioned ~1 ~ ~ if block ~ ~ ~ dark_oak_leaves if score @s uvm.is_invoke matches 1 unless entity @e[tag=ore_mark,distance=..0.1,type=snowball] run function uvm:preview/tree/marks/dark_oak_leaves
 execute positioned ~-1 ~ ~ if block ~ ~ ~ dark_oak_leaves if score @s uvm.is_invoke matches 1 unless entity @e[tag=ore_mark,distance=..0.1,type=snowball] run function uvm:preview/tree/marks/dark_oak_leaves
-execute positioned ~ ~1 ~ if block ~ ~ ~ dark_oak_leaves if score @s uvm.is_invoke matches 1 unless entity @e[tag=ore_mark,distance=..0.1,type=snowball] run function uvm:preview/tree/marks/dark_oak_leaves
 execute positioned ~ ~-1 ~ if block ~ ~ ~ dark_oak_leaves if score @s uvm.is_invoke matches 1 unless entity @e[tag=ore_mark,distance=..0.1,type=snowball] run function uvm:preview/tree/marks/dark_oak_leaves
+execute positioned ~ ~1 ~ if block ~ ~ ~ dark_oak_leaves if score @s uvm.is_invoke matches 1 unless entity @e[tag=ore_mark,distance=..0.1,type=snowball] run function uvm:preview/tree/marks/dark_oak_leaves
 
 execute if block ~ ~ ~-1 #uvm:air positioned ~ ~-1 ~-1 if block ~ ~ ~ dark_oak_log if score @s uvm.is_invoke matches 1 unless entity @e[tag=ore_mark,distance=..0.1,type=snowball] run function uvm:preview/tree/marks/dark_oak_log
 execute if block ~ ~ ~-1 #uvm:air positioned ~ ~1 ~-1 if block ~ ~ ~ dark_oak_log if score @s uvm.is_invoke matches 1 unless entity @e[tag=ore_mark,distance=..0.1,type=snowball] run function uvm:preview/tree/marks/dark_oak_log

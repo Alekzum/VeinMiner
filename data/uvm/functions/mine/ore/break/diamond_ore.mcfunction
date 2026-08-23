@@ -4,8 +4,8 @@ execute positioned ~ ~ ~1 if block ~ ~ ~ diamond_ore if score @s uvm.is_invoke m
 execute positioned ~ ~ ~-1 if block ~ ~ ~ diamond_ore if score @s uvm.is_invoke matches 1 run function uvm:mine/ore/break/diamond_ore
 execute positioned ~1 ~ ~ if block ~ ~ ~ diamond_ore if score @s uvm.is_invoke matches 1 run function uvm:mine/ore/break/diamond_ore
 execute positioned ~-1 ~ ~ if block ~ ~ ~ diamond_ore if score @s uvm.is_invoke matches 1 run function uvm:mine/ore/break/diamond_ore
-execute positioned ~ ~1 ~ if block ~ ~ ~ diamond_ore if score @s uvm.is_invoke matches 1 run function uvm:mine/ore/break/diamond_ore
 execute positioned ~ ~-1 ~ if block ~ ~ ~ diamond_ore if score @s uvm.is_invoke matches 1 run function uvm:mine/ore/break/diamond_ore
+execute positioned ~ ~1 ~ if block ~ ~ ~ diamond_ore if score @s uvm.is_invoke matches 1 run function uvm:mine/ore/break/diamond_ore
 
 execute if block ~ ~ ~-1 #uvm:air positioned ~ ~-1 ~-1 if block ~ ~ ~ diamond_ore if score @s uvm.is_invoke matches 1 run function uvm:mine/ore/break/diamond_ore
 execute if block ~ ~ ~-1 #uvm:air positioned ~ ~1 ~-1 if block ~ ~ ~ diamond_ore if score @s uvm.is_invoke matches 1 run function uvm:mine/ore/break/diamond_ore
