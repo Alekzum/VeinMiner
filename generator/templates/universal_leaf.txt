@@ -4,5 +4,5 @@ execute positioned ~ ~ ~1 if block ~ ~ ~ template_leaf template_function/templat
 execute positioned ~ ~ ~-1 if block ~ ~ ~ template_leaf template_function/template_leaf_func
 execute positioned ~1 ~ ~ if block ~ ~ ~ template_leaf template_function/template_leaf_func
 execute positioned ~-1 ~ ~ if block ~ ~ ~ template_leaf template_function/template_leaf_func
-execute positioned ~ ~1 ~ if block ~ ~ ~ template_leaf template_function/template_leaf_func
 execute positioned ~ ~-1 ~ if block ~ ~ ~ template_leaf template_function/template_leaf_func
+execute positioned ~ ~1 ~ if block ~ ~ ~ template_leaf template_function/template_leaf_func
