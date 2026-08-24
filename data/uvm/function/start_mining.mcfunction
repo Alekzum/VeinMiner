@@ -18,7 +18,7 @@ execute if data entity @s SelectedItem.components."minecraft:enchantments"{"mine
 data modify storage uvm:data temp1.current set from storage uvm:data temp0.current
 data modify storage uvm:data temp1.mining_mode set from storage uvm:data temp0.mining_mode
 
-execute if data storage uvm:data temp0{mining_mode:"tree"} run function uvm:set_leaf_type
+execute if data storage uvm:data temp0{mining_mode:"tree"} run function uvm:set_leaf_type with storage uvm:data temp1.current
 
 function uvm:find_mining_location
 
