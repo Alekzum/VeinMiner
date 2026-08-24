@@ -1,8 +1,7 @@
 execute unless data storage uvm:data pairs run data modify storage uvm:data pairs set value {}
 $execute unless data storage uvm:data pairs."$(namespace)" run data merge storage uvm:data {pairs:{"$(namespace)":{}}}
-$execute unless data storage uvm:data pairs."$(namespace)"."$(id)" run data merge storage uvm:data {pairs:{"$(namespace)":{"$(id)":[]}}}
-$execute unless data storage uvm:data pairs."$(namespace)"."$(id)" run data merge storage uvm:data {pairs:{"$(namespace)":{"$(id)":[]}}}
-$data modify storage uvm:data pairs."$(namespace)"."$(id)" append value {namespace: "$(leaf_namespace)", id: "$(leaf_id)"}
+# $execute unless data storage uvm:data pairs."$(namespace)"."$(id)" run data merge storage uvm:data {pairs:{"$(namespace)":{"$(id)":[]}}}
+$data modify storage uvm:data pairs."$(namespace)"."$(id)" set value {namespace: "$(leaf_namespace)", id: "$(leaf_id)"}
 # $scoreboard objectives add uvm.b.$(namespace).$(id) minecraft.mined:$(namespace).$(id)
 
 # execute unless data storage uvm:data previewTarget run data modify storage uvm:data previewTarget set value {}

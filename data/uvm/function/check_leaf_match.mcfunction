@@ -1,1 +1,1 @@
-$execute if block ~ ~ ~ minecraft:$(leaf_type) run function uvm:execute_mine_leaves
+$execute if block ~ ~ ~ $(namespace):$(id) run function uvm:execute_mine_leaves
