@@ -5,6 +5,7 @@ scoreboard objectives add uvm.temp dummy
 scoreboard objectives add uvm.notified dummy
 scoreboard objectives add uvm.notified_block dummy
 scoreboard objectives add uvm.debug dummy
+scoreboard objectives add uvm.trace dummy
 scoreboard objectives add uvm.preview dummy
 
 data modify storage uvm:data category set value {pickaxe: 1b, axe: 1b, shovel: 1b, hoe: 1b}

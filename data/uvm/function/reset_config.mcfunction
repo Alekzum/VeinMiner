@@ -5,6 +5,7 @@ execute unless data storage uvm:data custom_blocks run data modify storage uvm:d
 execute unless data storage uvm:data custom_tools run data modify storage uvm:data custom_tools set value {pickaxe: [], axe: [], shovel: [], hoe: []}
 
 scoreboard players set * uvm.debug 0
+scoreboard players set * uvm.trace 0
 scoreboard players set sneak_mode uvm.config 1
 scoreboard players set system_disabled uvm.config 0
 scoreboard players set preview_enabled uvm.config 1
