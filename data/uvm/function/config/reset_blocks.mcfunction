@@ -1,8 +1,10 @@
-data remove storage uvm:data blocks
+data modify storage uvm:data blocks set value {}
 data modify storage uvm:data blocks.pickaxe set value []
 data modify storage uvm:data blocks.axe set value []
 data modify storage uvm:data blocks.shovel set value []
 data modify storage uvm:data blocks.hoe set value []
+
+data modify storage uvm:data pairs set value {}
 
 function uvm:config/add_block {namespace: "minecraft", id: "coal_ore", category: "pickaxe"}
 function uvm:config/add_block {namespace: "minecraft", id: "iron_ore", category: "pickaxe"}
@@ -37,6 +39,20 @@ function uvm:config/add_block {namespace: "minecraft", id: "cherry_log", categor
 function uvm:config/add_block {namespace: "minecraft", id: "pale_oak_log", category: "axe"}
 function uvm:config/add_block {namespace: "minecraft", id: "crimson_stem", category: "axe"}
 function uvm:config/add_block {namespace: "minecraft", id: "warped_stem", category: "axe"}
+
+function uvm:config/add_log_pair {namespace: "minecraft", id: "oak_log", leaf_namespace: "minecraft", leaf_id: "oak_leaves"}
+function uvm:config/add_log_pair {namespace: "minecraft", id: "spruce_log", leaf_namespace: "minecraft", leaf_id: "spruce_leaves"}
+function uvm:config/add_log_pair {namespace: "minecraft", id: "birch_log", leaf_namespace: "minecraft", leaf_id: "birch_leaves"}
+function uvm:config/add_log_pair {namespace: "minecraft", id: "jungle_log", leaf_namespace: "minecraft", leaf_id: "jungle_leaves"}
+function uvm:config/add_log_pair {namespace: "minecraft", id: "acacia_log", leaf_namespace: "minecraft", leaf_id: "acacia_leaves"}
+function uvm:config/add_log_pair {namespace: "minecraft", id: "dark_oak_log", leaf_namespace: "minecraft", leaf_id: "dark_oak_leaves"}
+function uvm:config/add_log_pair {namespace: "minecraft", id: "mangrove_log", leaf_namespace: "minecraft", leaf_id: "mangrove_leaves"}
+function uvm:config/add_log_pair {namespace: "minecraft", id: "cherry_log", leaf_namespace: "minecraft", leaf_id: "cherry_leaves"}
+function uvm:config/add_log_pair {namespace: "minecraft", id: "pale_oak_log", leaf_namespace: "minecraft", leaf_id: "pale_oak_leaves"}
+function uvm:config/add_log_pair {namespace: "minecraft", id: "crimson_stem", leaf_namespace: "minecraft", leaf_id: "nether_wart_block"}
+function uvm:config/add_log_pair {namespace: "minecraft", id: "warped_stem", leaf_namespace: "minecraft", leaf_id: "warped_wart_block"}
+function uvm:config/add_log_pair {namespace: "minecraft", id: "crimson_stem", leaf_namespace: "minecraft", leaf_id: "shroomlight"}
+function uvm:config/add_log_pair {namespace: "minecraft", id: "warped_stem", leaf_namespace: "minecraft", leaf_id: "shroomlight"}
 
 function uvm:config/add_block {namespace: "minecraft", id: "stripped_oak_log", category: "axe"}
 function uvm:config/add_block {namespace: "minecraft", id: "stripped_spruce_log", category: "axe"}
